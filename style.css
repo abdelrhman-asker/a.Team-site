@@ -868,18 +868,17 @@ font-size: 14px;
     border-radius: 25px;
     padding: 50px 10px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     flex-direction: column;
     align-items: center;
     margin: 0;
 }
 .rightUseCasesFlexOnFlex {
     background-color: rgb(235, 245, 252);
-   
     border-radius: 25px;
     padding: 50px 10px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     flex-direction: column;
     align-items: center;
     margin: 0;
@@ -889,12 +888,16 @@ font-size: 14px;
     margin-bottom: 35px;
 }
 .InnerSecUse {
-    padding: 30px 50px;
+    padding: 30px 0px;
     box-shadow: 1px 1px 10px gray;
     border-radius: 20px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
     margin: 0%;
+    background-color: white;
 }
 .InnerSecUse i {
     color: white;
@@ -907,30 +910,78 @@ font-size: 14px;
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 .UseCasesFlexOnFlex .row {
     justify-content: center;
 }
 .dottedpic2 {
-    margin: 20px 0;
+    margin: 40px 0;
     
 }
 .FMangEx {
-    font-size: 16px;
+    font-size: 14px;
     opacity: 1;
     margin: 0%;
     padding: 0;
 }
 .FMangEx1 {
     opacity: 0.9;
-    font-size: 14px;
+    font-size: 12px;
 }
 .IcoSpanflex {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.Innerdottedsec {
+    margin: 0 4px 35px;
+}
+.h5textabove {
+    font-size: 12px;
+    opacity: 0.9;
+}
+.h6textbelow {
+    font-size: 12px;
+    opacity: 0.8;
+    margin-top: 15px;
+}
+.UsecasesBtnLast1 {
+    margin-top: 35px;
+    padding: 10px 25px;
+    border: 1px solid #ff7a00;
+    color: #ff7a00;
+}
+.UsecasesBtnLast1:hover {
+    margin-top: 35px;
+    padding: 10px 25px;
+    border: 1px solid #ff7a00;
+    color: #ff7a00;
+}
+.UsecasesBtnLast1 i {margin-right: 10px;}
+.UsecasesBtnLast2 {
+    margin-top: 35px;
+    padding: 10px 25px;
+    border: 1px solid #7000E3;
+    color: #7000E3;
+}
+.UsecasesBtnLast2:hover {
+    margin-top: 35px;
+    padding: 10px 25px;
+    border: 1px solid #7000E3;
+    color: #7000E3;
+}
+.UsecasesBtnLast2 i {margin-right: 10px;}
+@media screen and (min-width:1px) and (max-width:1168px) {
+    .RootPics12 {
+        flex-wrap: wrap;
+    }
+}
+@media screen and (min-width:1px) and (max-width:768px) {
+    .leftUseCasesFlexOnFlex {
+        margin-bottom: 50px;
+    }
 }
 /* End of Use Cases Section */
 
