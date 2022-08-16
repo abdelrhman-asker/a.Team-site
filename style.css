@@ -1,0 +1,936 @@
+
+/* Root Start */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Inter,sans-serif;
+    
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+/* Root End */
+ /*Start of Main start Background gradient */
+main {background-image: 
+    linear-gradient(
+      to right,
+      hsl(329.03, 100%, 93.92%) 0%,
+      hsl(329.05, 100%, 94%) 8.1%,
+      hsl(329.09, 100%, 94.24%) 15.5%,
+      hsl(329.15, 100%, 94.59%) 22.5%,
+      hsl(329.22, 100%, 95.05%) 29%,
+      hsl(329.31, 100%, 95.58%) 35.3%,
+      hsl(329.4, 100%, 96.15%) 41.2%,
+      hsl(329.5, 100%, 96.76%) 47.1%,
+      hsl(329.6, 100%, 97.36%) 52.9%,
+      hsl(329.69, 100%, 97.95%) 58.8%,
+      hsl(329.77, 100%, 98.5%) 64.7%,
+      hsl(329.85, 100%, 98.99%) 71%,
+      hsl(329.91, 100%, 99.4%) 77.5%,
+      hsl(329.96, 100%, 99.72%) 84.5%,
+      hsl(329.99, 100%, 99.93%) 91.9%,
+      hsl(0, 0%, 100%) 100%
+    );
+
+  height: fit-content;
+  width: 100vw;
+}
+ /*End of  Main start Background gradient */
+
+
+  /* start of nav bar */
+.nav-link {
+    color: black;
+    font-weight: bold;
+}
+
+.FNavBar {
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    height: fit-content;
+    background-color: transparent;
+    transition: 1s;
+    padding: 20px;
+    z-index: 3;
+
+}
+
+.MarkRemo {
+    margin-right: 20px;
+}
+.nav-active {
+    background-color:#fff;
+    box-shadow: 5px -1px 12px -5px grey;
+}
+.dropdown-menu {
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgb(208, 208, 208);
+    color: black;
+}
+.btnStyle1 {
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 0 20px ;
+}
+.btnStyle1:hover {
+    box-shadow: 1px 1px 10px rgb(162, 162, 162);
+}
+.btnStyle2 {
+    background-color: blueviolet;
+    border-radius: 5px;
+    margin: 0 10px;
+    color: white;
+    outline: none;
+}
+.btnStyle2:hover {
+    box-shadow: 1px 1px 10px rgb(162, 162, 162);
+    background-color: blueviolet;
+    color: white;
+    border: 1px solid blueviolet;
+
+}
+.btnStyle2:focus {
+    background-color: blueviolet;
+    color: white;
+
+}
+
+/* start of media query of nac bar */
+@media screen and (min-width:991px) and (max-width:1395px) {
+    .btnStyle2 {
+        margin: 0;
+        
+    }
+    .MarkRemo {
+        margin-right: 0;
+    }
+    .MNav1 {
+        margin-left: -100px;
+    }
+    .nav-link {
+font-size: 14px;
+    }
+   
+}
+@media screen and (min-width:1px) and (max-width:990px) {
+    .btnStyle2 {
+        width: 80%;
+    margin: 5px auto 10px ;
+        
+    }
+    .btnStyle1 {
+        width: 80%;
+    margin: 5px auto 10px ;
+        
+    }
+    
+}
+/* end of media query of nac bar */
+/* end of nav bar */
+
+/* start main section */
+.MsecPandP {
+    display: flex;
+    flex-wrap: wrap;
+    height: 880px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+    overflow-x: hidden;
+}
+.MsecPandP h2 {
+    font-weight: bold;
+    font-size: 46px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+.MsecPandP h4 {
+    font-size: 16px;
+    opacity: 0.7;
+    width: 90%;
+    margin-bottom: 25px;
+}
+.MsecPandP h5 {
+    font-size: 16px;
+    font-weight: bold;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.btnStyle3 {
+    background-color: blueviolet;
+    border-radius: 5px;
+    margin: 0 20px 0 0;
+    color: white;
+    padding: 10px 25px;
+    font-weight: bold;
+}
+.btnStyle3:hover {
+    color: white;
+    background-color: rgb(113, 34, 188);
+
+}
+.btnStyle4 {
+    color: blueviolet;
+    background-color: transparent;
+    border: 1px solid blueviolet;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-weight: bold;
+    margin-right: 0;
+}
+.btnStyle4:hover {
+    color: blueviolet;
+    background-color: transparent;
+    border: 1px solid blueviolet;
+    border-radius: 5px;
+}
+.VidStyle {
+    width: 98%;
+    height: 300px;
+}
+/* Start main section Media Query */
+
+@media screen and (min-width:1px) and (max-width:1200px) {
+    .btnStyle3 {
+        margin: 0 20px 15px 0;
+    }
+    .btnStyle4 {
+        margin: 0 0px 15px 0;
+    }
+    .MsecPandP {
+        text-align: center;
+        width: 100%;
+        margin-left: auto;
+    }
+    
+    .MsecPandP h2 {
+        font-weight: bold;
+        font-size: 30px;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    .MsecPandP h4 {
+  width: 100%;    
+  font-size: 14px;
+    }
+    .MsecPandP h5 {
+        width: 100%;
+        font-size: 14px;
+
+    }
+    .Tbtn {
+        margin-left: auto;
+        
+    }
+    .VidStyle {
+        width: 98%;
+        height: 300px;
+        margin-top: -200px;
+    }
+}
+/* End main section Media Query */
+/* End main section */
+
+
+/* start of first Section */
+.SecMOnly {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: fit-content;
+    padding : 136px 0;
+}
+
+.SecMOnly h4 {
+    opacity: 0.8;
+    font-size: 18px;
+}
+.SecMOnly h2 {
+    font-weight: bold;
+    font-size: 38px;
+}
+.SecMOnly h5 {
+    opacity: 0.8;
+    font-size: 18px;
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+.ImgsParent{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+/* start of first sesction media query */
+@media screen and (min-width:1px) and (max-width:1200px)  {
+    .ImgsParent {
+        flex-wrap: wrap;
+        
+    }
+    .ImgsParent img {
+        margin-bottom: 25px;
+    }
+    .SecMOnly {
+       
+        padding : 50px 0;
+    }
+}
+/* start of first sesction media query */
+/* end of first Section */
+
+
+/* start of Site Ads */
+.SiteAds {
+    background-color: #26014d;
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+    height: fit-content;
+    padding: 25px;
+    overflow-x: hidden;
+    width: 100vw;
+}
+.RowLogo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.LeftSide2 img {
+    height: 200px;
+}
+.RightSide2 h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.RightSide2 {
+    margin-left: 20px;
+}
+
+.RightSide2 h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.RightSide2 h4 {
+    font-size: 18px;
+    line-height: 25px;
+    opacity: 0.9;
+}
+.PlayV {
+    margin-top: 25px;
+    
+}
+.PlayV a {
+    text-decoration: none;
+    color: white;
+
+}
+/* start of first sesction media query */
+@media screen and (min-width:1px) and (max-width:1200px)  {
+    .ImgsParent {
+        flex-wrap: wrap;
+        
+    }
+    .ImgsParent img {
+        margin-bottom: 25px;
+    }
+    .LeftSide2 img {
+        height: 120px;
+    }
+    .RowLogo img {
+        width: 60px;
+    }
+}
+@media screen and (min-width:1px) and (max-width:476px)  {
+    .SiteAds {
+        flex-direction: column;
+        text-align: center;
+    }
+    .RowLogo img {
+        display: none;
+    }
+    .RightSide2 {
+        margin-left: 0;
+    }
+}
+/* End of first sesction media query */
+
+/* Start Of TLauncher Section */
+.TLauncher {
+    padding: 125px 25px 125px;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+.TLauncherFlex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    
+        
+}
+
+.LeftSideT h2 {
+    font-weight: bold;
+    font-size: 34px;
+}
+.LeftSideT h3 {
+    font-size: 18px;
+    opacity: 0.9;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.LeftSideT hr {
+    height: 0.5px;
+    margin-bottom: 30px;
+    width: 90%;
+}
+.LeftSideT h4 {
+    font-style: italic;
+    font-size: 12px;
+    font-weight: bold;
+}
+.LeftSideT a img {
+    margin: 15px 10px 15px 10px;
+    transition: 0.3s;
+}
+.LeftSideT a img:hover {
+    opacity: 0.3;
+}
+.TLauncherLast {
+    text-decoration: none;
+    color: rgb(91, 0, 176);
+    font-weight: bold;
+    font-size: 20px;
+}
+.Vid2Style {
+    cursor: pointer;
+    width: 100%;
+    
+}
+.RightSideT {
+    margin-left: 25px;
+    margin-right: 25px;
+    width: 100%;
+}
+/* start of first sesction media query */
+@media screen and (min-width:987px) and (max-width:1200px)  {
+    .LeftSideT h2 {
+        font-size: 26px;
+    }
+    .LeftSideT h3 {
+        font-size: 12x;       
+        margin: 0px;
+
+    }
+    .LeftSideT hr {
+        margin-bottom: 10px;
+    }
+    .TLauncherLast {
+        font-size: 14px;
+        
+    }
+}
+@media screen and (min-width:1px) and (max-width:987px)  {
+    .TLauncher{
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+        
+    .LeftSideT hr {
+        width: 100%;
+    }        
+    .LeftSideT {
+        padding-bottom: 20px;
+        text-align: center;
+    }    
+    .RightSideT {
+        margin: 0;
+    }    
+    
+}
+/* End of first sesction media query */
+
+
+/* End Of TLauncher Section */
+
+
+/* start of Explore Teams Seaction */
+.ExploreTeams {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 125px;
+}
+.ExploreTeamsH4 {
+    font-size: 14px;
+    opacity: 0.9;
+}
+.ExploreTeamsH2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: black;
+}
+.nav-pills {
+    flex-wrap: nowrap;
+}
+.nav-pills li {
+    display: flex;
+    justify-content: center;
+}
+
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: black;
+    background-color: transparent;
+    border-bottom: 2px solid black ;
+    opacity: 1;
+}
+.nav-link {
+    opacity: 0.5;
+}
+.nav-link:hover {
+    color: black;
+}
+.tab-content .tab-pane {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+}
+.card {
+    border: none;
+    margin: 0 12px;
+    text-decoration: none;
+    color: black;
+    height: 100%;
+}
+.card:hover {
+    text-decoration: none;
+    color: black;
+}
+.ExploreFoot {
+    justify-content: start;
+    align-items: center;
+    margin-top: auto;
+}
+.FirstPrice1 h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+.FirstPrice1 h5 {
+    font-size: 12px;
+    margin-left: 1px;
+}
+.HeadPic2 {
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-left: -13px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.CartT2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: black;
+}
+.CartT4 {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* start Explore Team Media query */
+@media screen and (min-width: 883px ) and (max-width: 1115px ) {
+        .nav-pills {
+           flex-wrap: nowrap;
+           width: 99vw;
+        }
+        .nav-pills li {
+            width: 100%;
+        }
+}
+
+
+
+
+@media screen and (min-width: 1px ) and (max-width: 883px ) {
+    .nav-pills {
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+        width: 99vw;
+        height: fit-content;
+}
+.nav-pills li {
+    width: fit-content;
+}
+.fourthrow {
+    display: none;
+}
+}
+@media screen and (min-width: 1px ) and (max-width: 576px ) {
+    .HeadPic1 {
+        width: 25px;
+        height: 25px;
+
+    }
+    .HeadPic2 {
+        width: 25px;
+        height: 25px;
+    }
+    .FirstPrice1 h3 {
+        font-size: 10px;
+    }
+    .FirstPrice1 h5 {
+        font-size: 8px;
+    }
+    .CartT2 {
+        font-size: 18px;
+    }
+    .CartT4 {
+        font-size: 12px;
+    }
+    .ExploreFootHead {
+        width: 100%;
+    }
+}
+/* End Explore Team Media query */
+/* End of Explore Teams Seaction */
+
+
+
+/* Start FormAteam Section */
+
+.FormAteam1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 125px;
+}
+.FormAright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.FormAFlexOnFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.FormAFlexOnFlex img{
+    margin-right: 10px;
+}
+.FormAright h4 {
+    opacity: 0.7;
+    font-size: 16px;
+}
+.FormAright h2 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 25px;
+}
+.FormAright h3{
+    font-size: 16px;
+}
+.FormOpac {
+    opacity: 0.9;   
+    margin-bottom: 25px;
+
+}
+.FormAleft img {
+    max-width: 100%;
+}
+.FormBtnLast {
+    background-color: blueviolet;
+    color: white;
+    padding: 10px 30px;
+}
+.FormBtnLast:hover {
+    
+    background-color: blueviolet;
+    color: white;
+}
+
+@media screen and (min-width: 1px) and (max-width: 992px) {
+    .FormAteam1 {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align:center;
+    }
+    .FormAright {
+        align-items: center;
+    }
+    .FormAleft {
+        margin-bottom: 30px;
+    }
+}
+/* End FormAteam Section */
+
+/* start of Section of abs and Rel */
+
+.SecRelandAbs {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    border-radius: 25px;
+    position: relative;
+    background-image: linear-gradient(90deg,#26014c,#090012);
+    margin-bottom: 125px;
+    overflow-x: hidden;
+    width: 100vw;
+}
+.LeftSideRelandAbs {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    color: white;
+    z-index: 2;
+
+}
+.RightSideRelandAbs {
+    position: absolute;
+    left: auto;
+    top: auto;
+    right: 0;
+    bottom: 0;
+}
+.RightSideRelandAbs img {
+    border-radius: 25px;
+}
+
+.LeftSideRelandAbs h4 {
+    font-size: 16px;
+    opacity: 0.9;
+    margin: 50px 0 15px;
+    
+}
+.LeftSideRelandAbs h2 {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.TypeN {
+    padding: 10px 15px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 0.5px solid rgb(255, 66, 66);
+    background-color: rgba(255, 255, 255, 0.217);
+    width: fit-content;
+}
+.TyoeNandTexr {
+    margin: 0px 10px 50px 0;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.VertLine {
+    background-color: rgb(255, 255, 255);
+    padding: 15px 0.5px;
+    margin: 0 10px;
+}
+.builderformText {
+    opacity: 0.8;
+    margin-left: 20px;
+
+}
+.LastRelandAbsSec {
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    align-items: center;
+}
+.LastRelandAbsSec button {
+    color: white;
+    border: 1px solid white ;
+    background-color: transparent;
+}
+.LastRelandAbsSec img {
+    margin-right: 20px;
+}
+
+/* start Media Query of Section of Rel an Abs */
+@media screen and (min-width:1px) and (max-width:796px) {
+    .TyoeNandTexr {
+        font-size: 14px;
+    }
+    .RightSideRelandAbs {
+        display: none;
+    }
+    .TyoeNandTexrPar {
+        flex-wrap: wrap;
+    }
+    
+.LastRelandAbsSec button {
+    font-size: 12px;
+    padding: 5px;
+    align-self: center;
+}
+.LastRelandAbsSec img {
+    width: 60px;
+    height: 30px;
+    margin: 20px 0;
+}
+.LastRelandAbsSec {
+    flex-wrap: wrap;
+}
+.builderformText {
+    margin-left: 0;
+}
+.builderformText {
+    display: none;
+}
+.VertLine {
+    display: none;
+}
+.LastRelandAbsSec {
+    margin-left: 0;
+}
+}
+/* End Media Query of Section of Rel an Abs */
+/* End of Section of abs and Rel */
+
+/* Start of Use Cases Section */
+.UsecasesSec {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+.UsecasesSec h2 {
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: black;
+    text-align: center;
+}
+.UsecasesSec .firsth3 {
+    font-size: 18px;
+    opacity: 0.9;
+    line-height: 29px;
+    text-align: center;
+}
+.UseCasesFlexOnFlex h4 {
+    font-size: 16px;
+    opacity: 0.9;
+    line-height: 29px;
+    text-align: center;
+}
+.UseCasesFlexOnFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.leftUseCasesFlexOnFlex {
+    background-color: rgb(249, 235, 244);
+    border-radius: 25px;
+    padding: 50px 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+.rightUseCasesFlexOnFlex {
+    background-color: rgb(235, 245, 252);
+   
+    border-radius: 25px;
+    padding: 50px 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+
+}
+.energandcol {
+    margin-bottom: 35px;
+}
+.InnerSecUse {
+    padding: 30px 50px;
+    box-shadow: 1px 1px 10px gray;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    margin: 0%;
+}
+.InnerSecUse i {
+    color: white;
+    background-color: gainsboro;
+    padding: 10px 10px;
+    border-radius: 50%;
+}
+.RootPics12 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.UseCasesFlexOnFlex .row {
+    justify-content: center;
+}
+.dottedpic2 {
+    margin: 20px 0;
+    
+}
+.FMangEx {
+    font-size: 16px;
+    opacity: 1;
+    margin: 0%;
+    padding: 0;
+}
+.FMangEx1 {
+    opacity: 0.9;
+    font-size: 14px;
+}
+.IcoSpanflex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* End of Use Cases Section */
+
