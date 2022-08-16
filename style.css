@@ -841,6 +841,7 @@ font-size: 14px;
     align-items: center;
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 125px;
 }
 .UsecasesSec h2 {
     font-weight: bold;
@@ -977,15 +978,121 @@ font-size: 14px;
     color: #7000E3;
 }
 .UsecasesBtnLast2 i {margin-right: 10px;}
+
+/* Start of use media query */
 @media screen and (min-width:1px) and (max-width:1168px) {
     .RootPics12 {
         flex-wrap: wrap;
     }
 }
-@media screen and (min-width:1px) and (max-width:768px) {
+@media screen and (min-width:1px) and (max-width:992px) {
     .leftUseCasesFlexOnFlex {
         margin-bottom: 50px;
     }
 }
+/* End of use media query */
 /* End of Use Cases Section */
+
+/* Start of Stepper Section */
+
+.StepperSec {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 125px;
+}
+.steppermainwork {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.Lsteppermainwork {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+.HIworks {
+    opacity: 0.6;
+    font-size: 22px;
+}
+.Letsbuild {
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+    margin-bottom: 15px;
+}
+.Lsteppermainwork h3 {
+    font-size: 18px;
+    color: #7000E3;
+    border: 1px solid #7000E3;
+    padding: 5px 10px;
+    border-radius: 50%;
+    margin-right: 15px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.Lsteppermainwork h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+}
+.LSecsteppermainwork {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15px;
+    position: relative;
+    
+}
+.LSecsteppermainwork h4 {
+    margin-left: 20px;
+    font-size: 18px;
+    line-height: 26px;
+    opacity: 0.7;
+}
+.LSecsteppermainwork::before{
+    content: "";
+    background-color: #7000E3;
+    width: 1px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+.Stepperrow {
+    display: flex;
+    flex-direction: column;
+}
+.Forhovercursor {
+    cursor: pointer;
+    height: fit-content;
+    margin-bottom: 30px;
+}
+.Forhovercursor:hover  .Lsteppermainwork h3 {
+   background-color: #7000E3;
+   color: white;
+}
+.StepperSecRight {
+    margin-top: 45px;
+}
+.ReviewYourTeam {
+    display: none;
+}
+.StartBuilding {
+    display: none;
+}
+.LastTextofStepper h3 {
+    color: #7000E3;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 45px;
+}
+.LastTextofStepper {
+    text-decoration: none;
+}
+/* End of Stepper Section */
 

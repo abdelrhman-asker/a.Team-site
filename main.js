@@ -112,6 +112,32 @@ function opencreate8() {
 
 
 
+const hover1 = document.getElementById('hover1');
+const hover2 = document.getElementById('hover2');
+const hover3 = document.getElementById('hover3');
+const PlanYourTeam = document.getElementById('PlanYourTeam');
+const ReviewYourTeam = document.getElementById('ReviewYourTeam');
+const StartBuilding = document.getElementById('StartBuilding');
+
+// ✅ Show hidden DIV on hover
+hover2.addEventListener('mouseover', function handleMouseOver() {
+    ReviewYourTeam.style.display = 'block';
+    PlanYourTeam.style.display = 'none';
+    StartBuilding.style.display = 'none';
+});
+hover1.addEventListener('mouseover', function handleMouseOver() {
+    PlanYourTeam.style.display = 'block';
+    ReviewYourTeam.style.display = 'none';
+    StartBuilding.style.display = 'none';
+});
+hover3.addEventListener('mouseover', function handleMouseOver() {
+    PlanYourTeam.style.display = 'none';
+    ReviewYourTeam.style.display = 'none';
+    StartBuilding.style.display = 'block';
+});
+
+
+
 // function BkColorWhite() {
 //     var x = document.getElementById("FNavBar");
 //     if (x.style.backgroundColor === "white") {
