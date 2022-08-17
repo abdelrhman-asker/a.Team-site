@@ -1002,11 +1002,14 @@ font-size: 14px;
     align-items: center;
     margin-bottom: 125px;
 }
+
+
 .steppermainwork {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    flex-wrap: nowrap;
 }
 .Lsteppermainwork {
     display: flex;
@@ -1072,10 +1075,6 @@ font-size: 14px;
     height: fit-content;
     margin-bottom: 30px;
 }
-.Forhovercursor:hover  .Lsteppermainwork h3 {
-   background-color: #7000E3;
-   color: white;
-}
 .StepperSecRight {
     margin-top: 45px;
 }
@@ -1093,6 +1092,62 @@ font-size: 14px;
 }
 .LastTextofStepper {
     text-decoration: none;
+}
+.StepperSecRight img {
+    height: 500px;
+}
+@media screen and (min-width:1px) and (max-width:992px) {
+    .LSecsteppermainwork::before{
+        display: none;
+        width: 0;
+    }
+    .beforePasuedo{
+        display: none;
+    }
+    .StepperSec .row {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+    .Lsteppermainwork {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .StepperMainLeft {
+        text-align: center;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .LSecsteppermainwork h4 {
+        margin: 0px;
+        padding: 0;
+        font-size: 14px;
+    }
+    .LSecsteppermainwork {
+        margin: 0;
+    }
+    .LastTextofStepper {
+        margin: auto;
+    }
+    .LastTextofStepper h3 {
+        margin: 0;
+        font-size: 12px;
+    }
+    .Stepperrow {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .Lsteppermainwork h2 {
+        font-size: 18px;
+    }
+    .StepperSecRight img {
+        height: 300px;
+    }
 }
 /* End of Stepper Section */
 

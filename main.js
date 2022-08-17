@@ -137,6 +137,34 @@ hover3.addEventListener('mouseover', function handleMouseOver() {
 });
 
 
+// ✅ Show hidden DIV on hover
+hover1.addEventListener('mouseover', function handleMouseOver() {
+    FhoverJs.style.backgroundColor = '#7000E3';
+    FhoverJs.style.color = 'white';
+    ShoverJs.style.backgroundColor = 'white';
+    ShoverJs.style.color = '#7000E3';
+    ThoverJs.style.backgroundColor = 'white';
+    ThoverJs.style.color = '#7000E3';
+});
+hover2.addEventListener('mouseover', function handleMouseOver() {
+    FhoverJs.style.backgroundColor = 'white';
+    FhoverJs.style.color = '#7000E3';
+    ShoverJs.style.backgroundColor = '#7000E3';
+    ShoverJs.style.color = 'white';
+    ThoverJs.style.backgroundColor = 'white';
+    ThoverJs.style.color = '#7000E3';
+});
+hover3.addEventListener('mouseover', function handleMouseOver() {
+    FhoverJs.style.backgroundColor = 'white';
+    FhoverJs.style.color = '#7000E3';
+    ShoverJs.style.backgroundColor = 'white';
+    ShoverJs.style.color = '#7000E3';
+    ThoverJs.style.backgroundColor = '#7000E3';
+    ThoverJs.style.color = 'white';
+});
+
+
+
 
 // function BkColorWhite() {
 //     var x = document.getElementById("FNavBar");
