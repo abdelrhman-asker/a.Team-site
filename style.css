@@ -808,6 +808,7 @@ font-size: 14px;
     font-size: 12px;
     padding: 5px;
     align-self: center;
+    
 }
 .LastRelandAbsSec img {
     width: 60px;
@@ -830,6 +831,17 @@ font-size: 14px;
     margin-left: 0;
 }
 }
+@media screen and (min-width:1px) and (max-width:992px) {
+    .LastRelandAbsSec button {
+        margin-bottom: 20px;}
+    .LastRelandAbsSec {
+            flex-wrap: wrap;
+        } 
+    .builderformText {
+            margin-left: 0;
+        }  
+    }
+
 /* End Media Query of Section of Rel an Abs */
 /* End of Section of abs and Rel */
 
