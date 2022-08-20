@@ -1108,6 +1108,11 @@ font-size: 14px;
 .StepperSecRight img {
     height: 500px;
 }
+#FhoverJs {
+    background-color: #7000E3;
+    color: white;
+}
+/* start of stepper section media query */
 @media screen and (min-width:1px) and (max-width:992px) {
     .LSecsteppermainwork::before{
         display: none;
@@ -1161,5 +1166,6 @@ font-size: 14px;
         height: 300px;
     }
 }
+/* End of stepper section media query */
 /* End of Stepper Section */
 
