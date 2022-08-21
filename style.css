@@ -996,6 +996,9 @@ font-size: 14px;
     .RootPics12 {
         flex-wrap: wrap;
     }
+    .IcoSpanflex {
+        margin-bottom: 20px;
+    }
 }
 @media screen and (min-width:1px) and (max-width:992px) {
     .leftUseCasesFlexOnFlex {
@@ -1163,7 +1166,7 @@ font-size: 14px;
         font-size: 18px;
     }
     .StepperSecRight img {
-        height: 300px;
+        height: 230px;
     }
 }
 /* End of stepper section media query */
@@ -1278,7 +1281,7 @@ font-size: 14px;
         font-size: 12px;
     }
     .MNowyouCAn h2  {
-        font-size: 16px;
+        font-size: 18px;
     }
     .cassstudiesbtn h3 {
         font-size: 14px;
