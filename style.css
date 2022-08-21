@@ -1169,3 +1169,129 @@ font-size: 14px;
 /* End of stepper section media query */
 /* End of Stepper Section */
 
+/* start of case studies section */
+
+.casestudies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 150px;
+    
+}
+.Mcasestudies h3 {
+    opacity: 0.7;
+    font-size: 18px;
+    color: black;
+}
+.MNowyouCAn h2  {
+    opacity: 1;
+    font-weight: bold;
+    font-size: 28px;
+    color: black;
+}
+.casestudiesVidText {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.casestudiesVid video {
+    cursor: pointer;
+}
+
+.casestudiesText {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: start;
+}
+.casestudiesTextFTop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 25px;
+}
+.imgparentusecases {
+    width: fit-content;
+    padding: 0;
+}
+.casestudiesTextBImg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.casestudiesTextBImg h4 {
+    font-size: 16px;
+    font-weight: bold;
+}
+.casestudiesTextBImg h3 {
+    font-size: 12px;
+    opacity: 0.7;
+}
+.howappUecasesParent h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+}
+.LearhowappUecasesParent h3 {
+    font-size: 18px;
+    opacity: 0.8;
+}
+.cassstudiesbtn {
+    margin: 0;
+    padding: 0;
+    color: #7000E3;
+    text-decoration: none;
+    
+}
+.cassstudiesbtn h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+@media screen and (min-width:1px) and (max-width:997px) {
+    .casestudiesVidText {
+        flex-direction: column;
+        margin-top: 0;
+    } 
+    .casestudiesTextFTop {
+        display: none;
+    }
+    .casestudiesText {
+        text-align: center;
+    }
+    .cassstudiesbtnparent {
+        margin: auto;
+    }
+    .casestudiesVid {
+        margin-bottom: 20px;
+    }
+}
+@media screen and (min-width:1px) and (max-width:475px) {
+    .Mcasestudies h3 {
+        font-size: 12px;
+    }
+    .MNowyouCAn h2  {
+        font-size: 16px;
+    }
+    .cassstudiesbtn h3 {
+        font-size: 14px;
+    }
+    .howappUecasesParent h2 {
+        font-size: 20px;
+    }
+}
+
+
+
+
+
+
+
+/* End of case studies section */
