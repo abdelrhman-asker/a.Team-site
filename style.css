@@ -1180,7 +1180,7 @@ font-size: 14px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
     
 }
 .Mcasestudies h3 {
@@ -1258,6 +1258,9 @@ font-size: 14px;
     font-size: 20px;
     font-weight: bold;
 }
+
+/* start of studies case section */
+/* End of studies case section */
 @media screen and (min-width:1px) and (max-width:997px) {
     .casestudiesVidText {
         flex-direction: column;
@@ -1281,20 +1284,125 @@ font-size: 14px;
         font-size: 12px;
     }
     .MNowyouCAn h2  {
-        font-size: 18px;
+        font-size: 22px;
     }
     .cassstudiesbtn h3 {
         font-size: 14px;
     }
     .howappUecasesParent h2 {
-        font-size: 20px;
+        font-size: 22px;
+    }
+}
+/* End of studies case section */
+/* End of case studies section */
+
+
+
+/* start cards pic and text section */
+.cardspicandtext {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 0;
+}
+.cardspicandtext .row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+.rowfirst {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.cardspicandtext .img-fluid {
+    height: 300px;
+    margin-bottom: 50px;
+}
+.cardT {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.CardTFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 10px;
+}
+.cardT img {
+    width: 50px;
+    height: 50px;
+}
+.cardT h3 {
+    font-size: 14px;
+    color: black;
+}
+.cardT span {
+    font-size: 12px;
+    color: black;
+    opacity: 0.7;
+}
+.card-text{
+    font-size: 26px;
+    font-weight: bold;
+
+}
+.text-muted {
+    font-size: 32px;
+    opacity: 0.8;
+}
+
+/* Start media query */
+@media screen and (min-width:1px) and (max-width:998px) {
+    .cardT h3 {
+        font-size: 12px;
+    }
+    .cardT span {
+        font-size: 10px;
+    }
+    .card-text{
+        font-size: 18px;
+    }
+    .text-muted {
+        font-size: 28px;
+    }
+}
+@media screen and (min-width:1px) and (max-width:576px) {
+    .rowfirst {
+        width: 100vw;
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+    }
+    .cardspicandtext .rowfirst {
+        justify-content: start;
+    }
+    .cardspicandtext .rowsec {
+        text-align: center;
+    }
+    .card-body {
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    .card-body p {
+        margin: 0;
+    }
+    .cardspicandtext .img-fluid {
+        margin-bottom: 20px;
     }
 }
 
 
 
 
+/* End media query */
 
 
-
-/* End of case studies section */
+/* End cards pic and text section */
