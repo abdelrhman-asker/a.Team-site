@@ -165,15 +165,27 @@ hover3.addEventListener('mouseover', function handleMouseOver() {
 
 
 
-
-// function BkColorWhite() {
-//     var x = document.getElementById("FNavBar");
-//     if (x.style.backgroundColor === "white") {
-//       x.style.backgroundColor = "transparent";
-//     } else {
-//       x.style.backgroundColor = "white";}}
-
-// function opencreate() {
-//     document.getElementById("pills-FinTech").style.backgroundColor = "red"; 
-//     document.getElementById("pills-Popular").style.display = "none"; 
-// }
+function firstpopup() {
+    document.querySelector(".PopUppages1").style.display="flex"
+}
+function IcoRemovePopUp1() {
+    document.querySelector(".PopUppages").style.display="none"
+}
+function Secpopup() {
+    document.querySelector(".PopUppages2").style.display="flex"
+}
+function IcoRemovePopUp2() {
+    document.querySelector(".PopUppages2").style.display="none"
+}
+function Thirdpopup() {
+    document.querySelector(".PopUppages3").style.display="flex"
+}
+function IcoRemovePopUp3() {
+    document.querySelector(".PopUppages3").style.display="none"
+}
+function Fourthpopup() {
+    document.querySelector(".PopUppages4").style.display="flex"
+}
+function IcoRemovePopUp4() {
+    document.querySelector(".PopUppages4").style.display="none"
+}

@@ -1168,6 +1168,12 @@ font-size: 14px;
     .StepperSecRight img {
         height: 230px;
     }
+    .StepperSecRight {
+        margin-top: 20px;
+    }
+    .Forhovercursor {
+        margin-bottom: 10px;
+    }
 }
 /* End of stepper section media query */
 /* End of Stepper Section */
@@ -1180,7 +1186,7 @@ font-size: 14px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     
 }
 .Mcasestudies h3 {
@@ -1254,8 +1260,13 @@ font-size: 14px;
     text-decoration: none;
     
 }
+.cassstudiesbtn:hover {
+    color: #7000E3;
+
+    
+}
 .cassstudiesbtn h3 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -1358,6 +1369,9 @@ font-size: 14px;
     font-size: 32px;
     opacity: 0.8;
 }
+.cardspicandtext .rowsec {
+    cursor: pointer;
+}
 
 /* Start media query */
 @media screen and (min-width:1px) and (max-width:998px) {
@@ -1398,11 +1412,168 @@ font-size: 14px;
         margin-bottom: 20px;
     }
 }
-
-
-
-
 /* End media query */
-
-
 /* End cards pic and text section */
+
+
+/* start of popup pages */
+.PopUppages {
+    position: fixed;
+    top: 15%;
+    bottom: 5%;
+    width: 90%;
+    left: 5%;
+    background-color: #8caa92;
+    background-image: url(pics/BGpopup.png);
+    background-size: cover;
+    border-radius: 15px; 
+    z-index: 5;
+    display: flex;
+    flex-direction: row;
+    display: none;
+    
+    
+}
+.PopUppages1 {
+    background-color: #8caa92;
+    background-image: url(pics/BGpopup.png);
+}
+.PopUppages2 {
+    background-color: #103b86;
+    background-image: none;
+}
+.PopUppages3 {
+    background-color: #292c33;
+    background-image: none;
+}
+.PopUppages4 {
+    background-color: #840;
+    background-image: none;
+}
+.PopUpLeftside {
+    overflow-y: scroll;
+    margin-top: 40px;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+}
+.firstleftsidde {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.quotepopup {
+    margin-right: 10px;
+}
+.firstleftsiddeText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.firstleftsiddeText h3 {
+    color: white;
+    font-size: 12px;
+    opacity: 0.8;
+}
+.firstleftsiddeText h4 {
+    color: white;
+    font-size: 14px;
+}
+.SecLeftSide h5 {
+    color: white;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.SecLeftSide h2 {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.SecLeftSide h4 {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.SecLeftSide h3 {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+.SecLeftSidepics  {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: 40px;
+
+}
+.SecLeftSidepics img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.SecLeftSidepicswithText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.SecLeftSidepicswithText span {
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.ThirdLeftSide h3 {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.ThirdLeftSide  {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+}
+
+.ThirdLeftSide button {
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    margin-bottom: 10px;
+}
+.ThirdLeftSide button:hover {
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+}
+.PopUprightside {
+    align-self: flex-end;
+    position: relative;
+}
+.PopUprightside img{
+    width: 60%;
+    float: right;
+}
+.PopUppages i {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    color: white;
+    font-size: 28px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.164);
+    box-shadow: 0.5px 0.5px 10px gray;
+    cursor: pointer;
+}
+
+
+/* End of popup pages */
