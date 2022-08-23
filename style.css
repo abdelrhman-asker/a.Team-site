@@ -1186,7 +1186,7 @@ font-size: 14px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     
 }
 .Mcasestudies h3 {
@@ -1207,7 +1207,9 @@ font-size: 14px;
     align-items: center;
     flex-wrap: wrap;
     margin-top: 50px;
+    
 }
+
 .casestudiesVid video {
     cursor: pointer;
 }
