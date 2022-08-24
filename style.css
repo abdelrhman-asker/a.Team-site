@@ -1165,14 +1165,17 @@ font-size: 14px;
     .Lsteppermainwork h2 {
         font-size: 18px;
     }
-    .StepperSecRight img {
-        height: 230px;
-    }
     .StepperSecRight {
         margin-top: 20px;
     }
     .Forhovercursor {
         margin-bottom: 10px;
+    }
+}
+@media screen and (min-width:1px) and (max-width:720px) {
+   
+    .StepperSecRight img {
+        height: 230px;
     }
 }
 /* End of stepper section media query */
