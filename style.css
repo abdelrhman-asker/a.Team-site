@@ -1274,9 +1274,12 @@ font-size: 14px;
     font-size: 18px;
     font-weight: bold;
 }
+.UsecasesbtnExStyle {
+    font-weight: bold;
+}
 
-/* start of studies case section */
 /* End of studies case section */
+/* Start of studies case section MEdia Query */
 @media screen and (min-width:1px) and (max-width:997px) {
     .casestudiesVidText {
         flex-direction: column;
@@ -1309,7 +1312,7 @@ font-size: 14px;
         font-size: 22px;
     }
 }
-/* End of studies case section */
+/* End of studies case section Media Query */
 /* End of case studies section */
 
 
@@ -1322,6 +1325,7 @@ font-size: 14px;
     flex-wrap: wrap;
     flex-direction: row;
     padding: 0;
+    margin-bottom: 125px;
 }
 .cardspicandtext .row {
     display: flex;
@@ -1582,3 +1586,126 @@ font-size: 14px;
 
 
 /* End of popup pages */
+
+
+/* Start of MIssion by ateam section */
+.MesATeam {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto 125px ;
+    text-align: center;
+}
+.MesATeamFirst {
+    opacity: 0.8;
+}
+.MesATeamFirst h4 {
+    font-size: 18px;
+}
+.MesATeamSec {
+    margin: 5px 0;
+    
+}
+.MesATeamSec h2{
+    font-size: 34px;
+    color: black;
+    line-height: 45px;
+    font-weight: 700;
+    letter-spacing: -.3px;
+    
+}
+.MesATeamThird {
+    opacity: 0.8;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+.MesATeamThird h4 {
+    font-size: 18px;
+    
+}
+.carousel-caption h5 {
+    color: white;
+}
+.carousel-caption p {
+    color: white;
+}
+
+.carousel-dark .carousel-control-next-icon, .carousel-dark .carousel-control-prev-icon {
+    filter: none;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 100%;
+}
+.carousel-item img {
+    border-radius: 25px;
+}
+.MesATeamThreeCards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+    margin-bottom: 50px;
+}
+.MesATeamThreeCards a  {
+    color: black;
+    text-decoration: none;
+}
+.MesATeamThreeCards img {
+    border-radius: 25px;
+}
+.MCardsBody{
+    text-align: start;
+    padding-left: 0;
+}
+.MCardsBody .card-title{
+   font-weight: bold;
+   font-size: 20px;
+}
+.MCardsBody .card-text{
+   font-weight: 500;
+   font-size: 16px;
+   opacity: 0.9;
+}
+.MCardsBody .card-text span{
+   font-weight: bold;
+   font-size: 18px;
+   opacity: 0.9;
+}
+/* Start of mission by Ateam Media query */
+@media screen and (min-width:1px) and (max-width:768px) {
+    .HiddenonMdWidth {
+        display: none;
+    }
+    .MesATeamThreeCards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+    .MesATeamThreeCards div {
+        
+        margin-bottom: 15px;
+    }
+    .MesATeamThreeCards div img {
+        
+        margin-bottom: 10px;
+    }
+    .MesATeamThreeCards div p {
+        
+        margin-bottom: 5px;
+    }
+}
+
+/* End of mission by Ateam Media query */
+
+/* End of MIssion by ateam section */
