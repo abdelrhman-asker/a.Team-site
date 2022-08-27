@@ -1,6 +1,3 @@
-
-
-
 const navbar = document.querySelector('.FNavBar');
 window.onscroll = () => {
     if (window.scrollY > 150) {
@@ -167,25 +164,57 @@ hover3.addEventListener('mouseover', function handleMouseOver() {
 
 function firstpopup() {
     document.querySelector(".PopUppages1").style.display="flex"
+    document.querySelector(".MainPopUppages").style.display="block"
+    document.querySelector("body").style.overflow="hidden"
 }
 function IcoRemovePopUp1() {
     document.querySelector(".PopUppages").style.display="none"
+    document.querySelector(".MainPopUppages").style.display="none"
+
+    document.querySelector("body").style.overflowY="scroll"
+    
 }
 function Secpopup() {
     document.querySelector(".PopUppages2").style.display="flex"
+    document.querySelector(".MainPopUppages").style.display="block"
+
+    document.querySelector("body").style.overflow="hidden"
+
 }
 function IcoRemovePopUp2() {
     document.querySelector(".PopUppages2").style.display="none"
+    document.querySelector(".MainPopUppages").style.display="none"
+
+    document.querySelector("body").style.overflowY="scroll"
+
 }
 function Thirdpopup() {
+    
     document.querySelector(".PopUppages3").style.display="flex"
+    document.querySelector(".MainPopUppages").style.display="block"
+
+    document.querySelector("body").style.overflow="hidden"
+
 }
 function IcoRemovePopUp3() {
     document.querySelector(".PopUppages3").style.display="none"
+    document.querySelector(".MainPopUppages").style.display="none"
+
+    document.querySelector("body").style.overflowY="scroll"
+
 }
 function Fourthpopup() {
     document.querySelector(".PopUppages4").style.display="flex"
+    document.querySelector(".MainPopUppages").style.display="block"
+
+    document.querySelector("body").style.overflow="hidden"
+
 }
 function IcoRemovePopUp4() {
     document.querySelector(".PopUppages4").style.display="none"
+    document.querySelector(".MainPopUppages").style.display="none"
+    document.querySelector("body").style.overflowY="scroll"
+
 }
+
+

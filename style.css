@@ -1426,6 +1426,18 @@ font-size: 14px;
 
 
 /* start of popup pages */
+.MainPopUppages {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    background-color: transparent;
+    z-index: 5;
+    display: none;
+    
+}
 .PopUppages {
     position: fixed;
     top: 15%;
