@@ -1,1009 +1,969 @@
-
 /* Root Start */
-*{
-    padding: 0;
-    margin: 0;
-    font-family: Inter,sans-serif;
-    
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Inter, sans-serif;
 }
 
 body {
-    width: 100vw;
-    overflow-x: hidden;
+  width: 100vw;
+  overflow-x: hidden;
 }
 /* Root End */
- /*Start of Main start Background gradient */
-main {background-image: 
-    linear-gradient(
-      to right,
-      hsl(329.03, 100%, 93.92%) 0%,
-      hsl(329.05, 100%, 94%) 8.1%,
-      hsl(329.09, 100%, 94.24%) 15.5%,
-      hsl(329.15, 100%, 94.59%) 22.5%,
-      hsl(329.22, 100%, 95.05%) 29%,
-      hsl(329.31, 100%, 95.58%) 35.3%,
-      hsl(329.4, 100%, 96.15%) 41.2%,
-      hsl(329.5, 100%, 96.76%) 47.1%,
-      hsl(329.6, 100%, 97.36%) 52.9%,
-      hsl(329.69, 100%, 97.95%) 58.8%,
-      hsl(329.77, 100%, 98.5%) 64.7%,
-      hsl(329.85, 100%, 98.99%) 71%,
-      hsl(329.91, 100%, 99.4%) 77.5%,
-      hsl(329.96, 100%, 99.72%) 84.5%,
-      hsl(329.99, 100%, 99.93%) 91.9%,
-      hsl(0, 0%, 100%) 100%
-    );
+/*Start of Main start Background gradient */
+main {
+  background-image: linear-gradient(
+    to right,
+    hsl(329.03, 100%, 93.92%) 0%,
+    hsl(329.05, 100%, 94%) 8.1%,
+    hsl(329.09, 100%, 94.24%) 15.5%,
+    hsl(329.15, 100%, 94.59%) 22.5%,
+    hsl(329.22, 100%, 95.05%) 29%,
+    hsl(329.31, 100%, 95.58%) 35.3%,
+    hsl(329.4, 100%, 96.15%) 41.2%,
+    hsl(329.5, 100%, 96.76%) 47.1%,
+    hsl(329.6, 100%, 97.36%) 52.9%,
+    hsl(329.69, 100%, 97.95%) 58.8%,
+    hsl(329.77, 100%, 98.5%) 64.7%,
+    hsl(329.85, 100%, 98.99%) 71%,
+    hsl(329.91, 100%, 99.4%) 77.5%,
+    hsl(329.96, 100%, 99.72%) 84.5%,
+    hsl(329.99, 100%, 99.93%) 91.9%,
+    hsl(0, 0%, 100%) 100%
+  );
 
   height: fit-content;
   width: 100vw;
 }
- /*End of  Main start Background gradient */
+/*End of  Main start Background gradient */
 
-
-  /* start of nav bar */
+/* start of nav bar */
 .nav-link {
-    color: black;
-    font-weight: bold;
+  color: black;
+  font-weight: bold;
 }
 
 .FNavBar {
-    position: fixed;
-    top: 0px;
-    left: 0;
-    right: 0;
-    height: fit-content;
-    background-color: transparent;
-    transition: 1s;
-    padding: 20px;
-    z-index: 3;
-
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  height: fit-content;
+  background-color: transparent;
+  transition: 1s;
+  padding: 20px;
+  z-index: 3;
 }
 
 .MarkRemo {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 .nav-active {
-    background-color:#fff;
-    box-shadow: 5px -1px 12px -5px grey;
+  background-color: #fff;
+  box-shadow: 5px -1px 12px -5px grey;
 }
 .dropdown-menu {
-    border-radius: 5px;
-    box-shadow: 1px 1px 5px rgb(208, 208, 208);
-    color: black;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgb(208, 208, 208);
+  color: black;
 }
 .btnStyle1 {
-    background-color: transparent;
-    border: 1px solid black;
-    border-radius: 5px;
-    margin: 0 20px ;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 0 20px;
 }
 .btnStyle1:hover {
-    box-shadow: 1px 1px 10px rgb(162, 162, 162);
+  box-shadow: 1px 1px 10px rgb(162, 162, 162);
 }
 .btnStyle2 {
-    background-color: blueviolet;
-    border-radius: 5px;
-    margin: 0 10px;
-    color: white;
-    outline: none;
+  background-color: blueviolet;
+  border-radius: 5px;
+  margin: 0 10px;
+  color: white;
+  outline: none;
 }
 .btnStyle2:hover {
-    box-shadow: 1px 1px 10px rgb(162, 162, 162);
-    background-color: blueviolet;
-    color: white;
-    border: 1px solid blueviolet;
-
+  box-shadow: 1px 1px 10px rgb(162, 162, 162);
+  background-color: blueviolet;
+  color: white;
+  border: 1px solid blueviolet;
 }
 .btnStyle2:focus {
-    background-color: blueviolet;
-    color: white;
-
+  background-color: blueviolet;
+  color: white;
 }
 
 /* start of media query of nac bar */
-@media screen and (min-width:991px) and (max-width:1395px) {
-    .btnStyle2 {
-        margin: 0;
-        
-    }
-    .MarkRemo {
-        margin-right: 0;
-    }
-    .MNav1 {
-        margin-left: -100px;
-    }
-    .nav-link {
-font-size: 14px;
-    }
-   
+@media screen and (min-width: 991px) and (max-width: 1395px) {
+  .btnStyle2 {
+    margin: 0;
+  }
+  .MarkRemo {
+    margin-right: 0;
+  }
+  .MNav1 {
+    margin-left: -100px;
+  }
+  .nav-link {
+    font-size: 14px;
+  }
 }
-@media screen and (min-width:1px) and (max-width:990px) {
-    .btnStyle2 {
-        width: 80%;
-    margin: 5px auto 10px ;
-        
-    }
-    .btnStyle1 {
-        width: 80%;
-    margin: 5px auto 10px ;
-        
-    }
-    
+@media screen and (min-width: 1px) and (max-width: 990px) {
+  .btnStyle2 {
+    width: 80%;
+    margin: 5px auto 10px;
+  }
+  .btnStyle1 {
+    width: 80%;
+    margin: 5px auto 10px;
+  }
 }
 /* end of media query of nac bar */
 /* end of nav bar */
 
 /* start main section */
 .MsecPandP {
-    display: flex;
-    flex-wrap: wrap;
-    height: 880px;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0;
-    overflow-x: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  height: 880px;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+  overflow-x: hidden;
 }
 .MsecPandP h2 {
-    font-weight: bold;
-    font-size: 46px;
-    width: 100%;
-    margin-bottom: 25px;
+  font-weight: bold;
+  font-size: 46px;
+  width: 100%;
+  margin-bottom: 25px;
 }
 .MsecPandP h4 {
-    font-size: 16px;
-    opacity: 0.7;
-    width: 90%;
-    margin-bottom: 25px;
+  font-size: 16px;
+  opacity: 0.7;
+  width: 90%;
+  margin-bottom: 25px;
 }
 .MsecPandP h5 {
-    font-size: 16px;
-    font-weight: bold;
-    width: 90%;
-    margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  width: 90%;
+  margin-bottom: 20px;
 }
 
 .btnStyle3 {
-    background-color: blueviolet;
-    border-radius: 5px;
-    margin: 0 20px 0 0;
-    color: white;
-    padding: 10px 25px;
-    font-weight: bold;
+  background-color: blueviolet;
+  border-radius: 5px;
+  margin: 0 20px 0 0;
+  color: white;
+  padding: 10px 25px;
+  font-weight: bold;
 }
 .btnStyle3:hover {
-    color: white;
-    background-color: rgb(113, 34, 188);
-
+  color: white;
+  background-color: rgb(113, 34, 188);
 }
 .btnStyle4 {
-    color: blueviolet;
-    background-color: transparent;
-    border: 1px solid blueviolet;
-    border-radius: 5px;
-    padding: 10px 25px;
-    font-weight: bold;
-    margin-right: 0;
+  color: blueviolet;
+  background-color: transparent;
+  border: 1px solid blueviolet;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-weight: bold;
+  margin-right: 0;
 }
 .btnStyle4:hover {
-    color: blueviolet;
-    background-color: transparent;
-    border: 1px solid blueviolet;
-    border-radius: 5px;
+  color: blueviolet;
+  background-color: transparent;
+  border: 1px solid blueviolet;
+  border-radius: 5px;
 }
 .VidStyle {
-    width: 98%;
-    height: 300px;
+  width: 98%;
+  height: 300px;
 }
 .Tbtn {
-    text-align: start;
+  text-align: start;
 }
 /* Start main section Media Query */
 
-@media screen and (min-width:1px) and (max-width:1200px) {
-    .btnStyle3 {
-        margin: 0 20px 15px 0;
-    }
-    .btnStyle4 {
-        margin: 0 0px 15px 0;
-    }
-    .MsecPandP {
-        text-align: center;
-        width: 100%;
-        margin-left: auto;
-    }
-    
-    .MsecPandP h2 {
-        font-weight: bold;
-        font-size: 30px;
-        margin-bottom: 25px;
-        text-align: center;
-    }
-    .MsecPandP h4 {
-  width: 100%;    
-  font-size: 14px;
-    }
-    .MsecPandP h5 {
-        width: 100%;
-        font-size: 14px;
+@media screen and (min-width: 1px) and (max-width: 1200px) {
+  .btnStyle3 {
+    margin: 0 20px 15px 0;
+  }
+  .btnStyle4 {
+    margin: 0 0px 15px 0;
+  }
+  .MsecPandP {
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+  }
 
-    }
-    .Tbtn {
-        margin-left: auto;
-        text-align: center;
-        
-    }
-    .VidStyle {
-        width: 98%;
-        height: 300px;
-        margin-top: -200px;
-    }
+  .MsecPandP h2 {
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .MsecPandP h4 {
+    width: 100%;
+    font-size: 14px;
+  }
+  .MsecPandP h5 {
+    width: 100%;
+    font-size: 14px;
+  }
+  .Tbtn {
+    margin-left: auto;
+    text-align: center;
+  }
+  .VidStyle {
+    width: 98%;
+    height: 300px;
+    margin-top: -200px;
+  }
 }
 /* End main section Media Query */
 /* End main section */
 
-
 /* start of first Section */
 .SecMOnly {
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: fit-content;
-    padding : 136px 0;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: fit-content;
+  padding: 136px 0;
 }
 
 .SecMOnly h4 {
-    opacity: 0.8;
-    font-size: 18px;
+  opacity: 0.8;
+  font-size: 18px;
 }
 .SecMOnly h2 {
-    font-weight: bold;
-    font-size: 38px;
+  font-weight: bold;
+  font-size: 38px;
 }
 .SecMOnly h5 {
-    opacity: 0.8;
-    font-size: 18px;
-    padding-bottom: 40px;
-    padding-top: 20px;
+  opacity: 0.8;
+  font-size: 18px;
+  padding-bottom: 40px;
+  padding-top: 20px;
 }
-.ImgsParent{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: nowrap;
+.ImgsParent {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 /* start of first sesction media query */
-@media screen and (min-width:1px) and (max-width:1200px)  {
-    .ImgsParent {
-        flex-wrap: wrap;
-        
-    }
-    .ImgsParent img {
-        margin-bottom: 25px;
-    }
-    .SecMOnly {
-       
-        padding : 50px 0;
-    }
+@media screen and (min-width: 1px) and (max-width: 1200px) {
+  .ImgsParent {
+    flex-wrap: wrap;
+  }
+  .ImgsParent img {
+    margin-bottom: 25px;
+  }
+  .SecMOnly {
+    padding: 50px 0;
+  }
 }
 /* start of first sesction media query */
 /* end of first Section */
 
-
 /* start of Site Ads */
 .SiteAds {
-    background-color: #26014d;
-    color: white;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: start;
-    align-items: center;
-    height: fit-content;
-    padding: 25px;
-    overflow-x: hidden;
-    width: 100vw;
+  background-color: #26014d;
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
+  height: fit-content;
+  padding: 25px;
+  overflow-x: hidden;
+  width: 100vw;
 }
 .RowLogo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
 }
 .LeftSide2 img {
-    height: 200px;
+  height: 200px;
 }
 .RightSide2 h2 {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 15px;
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 .RightSide2 {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .RightSide2 h3 {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 25px;
 }
 .RightSide2 h4 {
-    font-size: 18px;
-    line-height: 25px;
-    opacity: 0.9;
+  font-size: 18px;
+  line-height: 25px;
+  opacity: 0.9;
 }
 .PlayV {
-    margin-top: 25px;
-    
+  margin-top: 25px;
 }
 .PlayV a {
-    text-decoration: none;
-    color: white;
-
+  text-decoration: none;
+  color: white;
 }
 /* start of first sesction media query */
-@media screen and (min-width:1px) and (max-width:1200px)  {
-    .ImgsParent {
-        flex-wrap: wrap;
-        
-    }
-    .ImgsParent img {
-        margin-bottom: 25px;
-    }
-    .LeftSide2 img {
-        height: 120px;
-    }
-    .RowLogo img {
-        width: 60px;
-    }
+@media screen and (min-width: 1px) and (max-width: 1200px) {
+  .ImgsParent {
+    flex-wrap: wrap;
+  }
+  .ImgsParent img {
+    margin-bottom: 25px;
+  }
+  .LeftSide2 img {
+    height: 120px;
+  }
+  .RowLogo img {
+    width: 60px;
+  }
 }
-@media screen and (min-width:1px) and (max-width:476px)  {
-    .SiteAds {
-        flex-direction: column;
-        text-align: center;
-    }
-    .RowLogo img {
-        display: none;
-    }
-    .RightSide2 {
-        margin-left: 0;
-    }
+@media screen and (min-width: 1px) and (max-width: 476px) {
+  .SiteAds {
+    flex-direction: column;
+    text-align: center;
+  }
+  .RowLogo img {
+    display: none;
+  }
+  .RightSide2 {
+    margin-left: 0;
+  }
 }
 /* End of first sesction media query */
 
 /* Start Of TLauncher Section */
 .TLauncher {
-    padding: 125px 25px 125px;
-    overflow-x: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+  padding: 125px 25px 125px;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 
-
-.TLauncherFlex{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    
-        
+.TLauncherFlex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
 }
 
 .LeftSideT h2 {
-    font-weight: bold;
-    font-size: 34px;
+  font-weight: bold;
+  font-size: 34px;
 }
 .LeftSideT h3 {
-    font-size: 18px;
-    opacity: 0.9;
-    margin-bottom: 30px;
-    margin-top: 30px;
+  font-size: 18px;
+  opacity: 0.9;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 .LeftSideT hr {
-    height: 0.5px;
-    margin-bottom: 30px;
-    width: 90%;
+  height: 0.5px;
+  margin-bottom: 30px;
+  width: 90%;
 }
 .LeftSideT h4 {
-    font-style: italic;
-    font-size: 12px;
-    font-weight: bold;
+  font-style: italic;
+  font-size: 12px;
+  font-weight: bold;
 }
 .LeftSideT a img {
-    margin: 15px 10px 15px 10px;
-    transition: 0.3s;
+  margin: 15px 10px 15px 10px;
+  transition: 0.3s;
 }
 .LeftSideT a img:hover {
-    opacity: 0.3;
+  opacity: 0.3;
 }
 .TLauncherLast {
-    text-decoration: none;
-    color: rgb(91, 0, 176);
-    font-weight: bold;
-    font-size: 20px;
+  text-decoration: none;
+  color: rgb(91, 0, 176);
+  font-weight: bold;
+  font-size: 20px;
 }
 .Vid2Style {
-    cursor: pointer;
-    width: 100%;
-    
+  cursor: pointer;
+  width: 100%;
 }
 .RightSideT {
-    margin-left: 25px;
-    margin-right: 25px;
-    width: 100%;
+  margin-left: 25px;
+  margin-right: 25px;
+  width: 100%;
 }
 /* start of first sesction media query */
-@media screen and (min-width:987px) and (max-width:1200px)  {
-    .LeftSideT h2 {
-        font-size: 26px;
-    }
-    .LeftSideT h3 {
-        font-size: 12x;       
-        margin: 0px;
-
-    }
-    .LeftSideT hr {
-        margin-bottom: 10px;
-    }
-    .TLauncherLast {
-        font-size: 14px;
-        
-    }
+@media screen and (min-width: 987px) and (max-width: 1200px) {
+  .LeftSideT h2 {
+    font-size: 26px;
+  }
+  .LeftSideT h3 {
+    font-size: 12x;
+    margin: 0px;
+  }
+  .LeftSideT hr {
+    margin-bottom: 10px;
+  }
+  .TLauncherLast {
+    font-size: 14px;
+  }
 }
-@media screen and (min-width:1px) and (max-width:987px)  {
-    .TLauncher{
-        flex-wrap: wrap;
-        flex-direction: column-reverse;
-    }
-        
-    .LeftSideT hr {
-        width: 100%;
-    }        
-    .LeftSideT {
-        padding-bottom: 20px;
-        text-align: center;
-    }    
-    .RightSideT {
-        margin: 0;
-    }    
-    
+@media screen and (min-width: 1px) and (max-width: 987px) {
+  .TLauncher {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  .LeftSideT hr {
+    width: 100%;
+  }
+  .LeftSideT {
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  .RightSideT {
+    margin: 0;
+  }
 }
 /* End of first sesction media query */
 
-
 /* End Of TLauncher Section */
-
 
 /* start of Explore Teams Seaction */
 .ExploreTeams {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 125px;
 }
 .ExploreTeamsH4 {
-    font-size: 14px;
-    opacity: 0.9;
+  font-size: 14px;
+  opacity: 0.9;
 }
 .ExploreTeamsH2 {
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 25px;
-    color: black;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: black;
 }
 .nav-pills {
-    flex-wrap: nowrap;
+  flex-wrap: nowrap;
 }
 .nav-pills li {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    color: black;
-    background-color: transparent;
-    border-bottom: 2px solid black ;
-    opacity: 1;
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: black;
+  background-color: transparent;
+  border-bottom: 2px solid black;
+  opacity: 1;
 }
 .nav-link {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 .nav-link:hover {
-    color: black;
+  color: black;
 }
 .tab-content .tab-pane {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 .card {
-    border: none;
-    margin: 0 12px;
-    text-decoration: none;
-    color: black;
-    height: 100%;
+  border: none;
+  margin: 0 12px;
+  text-decoration: none;
+  color: black;
+  height: 100%;
 }
 .card:hover {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 .ExploreFoot {
-    justify-content: start;
-    align-items: center;
-    margin-top: auto;
+  justify-content: start;
+  align-items: center;
+  margin-top: auto;
 }
 .FirstPrice1 h3 {
-    font-size: 18px;
-    font-weight: bold;
-    margin-left: 10px;
-    margin-bottom: 0;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-bottom: 0;
 }
 .FirstPrice1 h5 {
-    font-size: 12px;
-    margin-left: 1px;
+  font-size: 12px;
+  margin-left: 1px;
 }
 .HeadPic2 {
-    border: 2px solid white;
-    border-radius: 50%;
-    margin-left: -13px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin-left: -13px;
 }
 
 .card-body {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .CartT2 {
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 25px;
-    color: black;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  color: black;
 }
 .CartT4 {
-    font-size: 14px;
-    opacity: 0.9;
+  font-size: 14px;
+  opacity: 0.9;
 }
 
 /* start Explore Team Media query */
-@media screen and (min-width: 883px ) and (max-width: 1115px ) {
-        .nav-pills {
-           flex-wrap: nowrap;
-           width: 99vw;
-        }
-        .nav-pills li {
-            width: 100%;
-        }
+@media screen and (min-width: 883px) and (max-width: 1115px) {
+  .nav-pills {
+    flex-wrap: nowrap;
+    width: 99vw;
+  }
+  .nav-pills li {
+    width: 100%;
+  }
 }
 
-
-
-
-@media screen and (min-width: 1px ) and (max-width: 883px ) {
-    .nav-pills {
-        overflow-x: scroll;
-        flex-wrap: nowrap;
-        width: 99vw;
-        height: fit-content;
-}
-.nav-pills li {
+@media screen and (min-width: 1px) and (max-width: 883px) {
+  .nav-pills {
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    width: 99vw;
+    height: fit-content;
+  }
+  .nav-pills li {
     width: fit-content;
-}
-.fourthrow {
+  }
+  .fourthrow {
     display: none;
+  }
 }
-}
-@media screen and (min-width: 1px ) and (max-width: 576px ) {
-    .HeadPic1 {
-        width: 25px;
-        height: 25px;
-
-    }
-    .HeadPic2 {
-        width: 25px;
-        height: 25px;
-    }
-    .FirstPrice1 h3 {
-        font-size: 10px;
-    }
-    .FirstPrice1 h5 {
-        font-size: 8px;
-    }
-    .CartT2 {
-        font-size: 18px;
-    }
-    .CartT4 {
-        font-size: 12px;
-    }
-    .ExploreFootHead {
-        width: 100%;
-    }
+@media screen and (min-width: 1px) and (max-width: 576px) {
+  .HeadPic1 {
+    width: 25px;
+    height: 25px;
+  }
+  .HeadPic2 {
+    width: 25px;
+    height: 25px;
+  }
+  .FirstPrice1 h3 {
+    font-size: 10px;
+  }
+  .FirstPrice1 h5 {
+    font-size: 8px;
+  }
+  .CartT2 {
+    font-size: 18px;
+  }
+  .CartT4 {
+    font-size: 12px;
+  }
+  .ExploreFootHead {
+    width: 100%;
+  }
 }
 /* End Explore Team Media query */
 /* End of Explore Teams Seaction */
 
-
-
 /* Start FormAteam Section */
 
 .FormAteam1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: nowrap;
-    margin-bottom: 125px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-bottom: 125px;
 }
 .FormAright {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 .FormAFlexOnFlex {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
-.FormAFlexOnFlex img{
-    margin-right: 10px;
+.FormAFlexOnFlex img {
+  margin-right: 10px;
 }
 .FormAright h4 {
-    opacity: 0.7;
-    font-size: 16px;
+  opacity: 0.7;
+  font-size: 16px;
 }
 .FormAright h2 {
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 48px;
-    margin-bottom: 25px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  margin-bottom: 25px;
 }
-.FormAright h3{
-    font-size: 16px;
+.FormAright h3 {
+  font-size: 16px;
 }
 .FormOpac {
-    opacity: 0.9;   
-    margin-bottom: 25px;
-
+  opacity: 0.9;
+  margin-bottom: 25px;
 }
 .FormAleft img {
-    max-width: 100%;
+  max-width: 100%;
 }
 .FormBtnLast {
-    background-color: blueviolet;
-    color: white;
-    padding: 10px 30px;
+  background-color: blueviolet;
+  color: white;
+  padding: 10px 30px;
 }
 .FormBtnLast:hover {
-    
-    background-color: blueviolet;
-    color: white;
+  background-color: blueviolet;
+  color: white;
 }
 
 @media screen and (min-width: 1px) and (max-width: 992px) {
-    .FormAteam1 {
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        text-align:center;
-    }
-    .FormAright {
-        align-items: center;
-    }
-    .FormAleft {
-        margin-bottom: 30px;
-    }
+  .FormAteam1 {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+  .FormAright {
+    align-items: center;
+  }
+  .FormAleft {
+    margin-bottom: 30px;
+  }
 }
 /* End FormAteam Section */
 
 /* start of Section of abs and Rel */
 
 .SecRelandAbs {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    border-radius: 25px;
-    position: relative;
-    background-image: linear-gradient(90deg,#26014c,#090012);
-    margin-bottom: 125px;
-    overflow-x: hidden;
-    width: 100vw;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  border-radius: 25px;
+  position: relative;
+  background-image: linear-gradient(90deg, #26014c, #090012);
+  margin-bottom: 125px;
+  overflow-x: hidden;
+  width: 100vw;
 }
 .LeftSideRelandAbs {
-    display: flex;
-    justify-content: start;
-    align-items: flex-start;
-    flex-direction: column;
-    flex-wrap: wrap;
-    color: white;
-    z-index: 2;
-
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: white;
+  z-index: 2;
 }
 .RightSideRelandAbs {
-    position: absolute;
-    left: auto;
-    top: auto;
-    right: 0;
-    bottom: 0;
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: 0;
+  bottom: 0;
 }
 .RightSideRelandAbs img {
-    border-radius: 25px;
+  border-radius: 25px;
 }
 
 .LeftSideRelandAbs h4 {
-    font-size: 16px;
-    opacity: 0.9;
-    margin: 50px 0 15px;
-    
+  font-size: 16px;
+  opacity: 0.9;
+  margin: 50px 0 15px;
 }
 .LeftSideRelandAbs h2 {
-    font-size: 42px;
-    font-weight: bold;
-    margin-bottom: 20px;
+  font-size: 42px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 .TypeN {
-    padding: 10px 15px;
-    margin-right: 10px;
-    border-radius: 50%;
-    border: 0.5px solid rgb(255, 66, 66);
-    background-color: rgba(255, 255, 255, 0.217);
-    width: fit-content;
+  padding: 10px 15px;
+  margin-right: 10px;
+  border-radius: 50%;
+  border: 0.5px solid rgb(255, 66, 66);
+  background-color: rgba(255, 255, 255, 0.217);
+  width: fit-content;
 }
 .TyoeNandTexr {
-    margin: 0px 10px 50px 0;
-    font-weight: bold;
-    font-size: 18px;
+  margin: 0px 10px 50px 0;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .VertLine {
-    background-color: rgb(255, 255, 255);
-    padding: 15px 0.5px;
-    margin: 0 10px;
+  background-color: rgb(255, 255, 255);
+  padding: 15px 0.5px;
+  margin: 0 10px;
 }
 .builderformText {
-    opacity: 0.8;
-    margin-left: 20px;
-
+  opacity: 0.8;
+  margin-left: 20px;
 }
 .LastRelandAbsSec {
-    margin-bottom: 50px;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: start;
-    align-items: center;
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: start;
+  align-items: center;
 }
 .LastRelandAbsSec button {
-    color: white;
-    border: 1px solid white ;
-    background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  background-color: transparent;
 }
 .LastRelandAbsSec img {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 /* start Media Query of Section of Rel an Abs */
-@media screen and (min-width:1px) and (max-width:796px) {
-    .TyoeNandTexr {
-        font-size: 14px;
-    }
-    .RightSideRelandAbs {
-        display: none;
-    }
-    .TyoeNandTexrPar {
-        flex-wrap: wrap;
-    }
-    
-.LastRelandAbsSec button {
+@media screen and (min-width: 1px) and (max-width: 796px) {
+  .TyoeNandTexr {
+    font-size: 14px;
+  }
+  .RightSideRelandAbs {
+    display: none;
+  }
+  .TyoeNandTexrPar {
+    flex-wrap: wrap;
+  }
+
+  .LastRelandAbsSec button {
     font-size: 12px;
     padding: 5px;
     align-self: center;
-    
-}
-.LastRelandAbsSec img {
+  }
+  .LastRelandAbsSec img {
     width: 60px;
     height: 30px;
     margin: 20px 0;
-}
-.LastRelandAbsSec {
+  }
+  .LastRelandAbsSec {
     flex-wrap: wrap;
-}
-.builderformText {
+  }
+  .builderformText {
     margin-left: 0;
-}
-.builderformText {
+  }
+  .builderformText {
     display: none;
-}
-.VertLine {
+  }
+  .VertLine {
     display: none;
-}
-.LastRelandAbsSec {
+  }
+  .LastRelandAbsSec {
     margin-left: 0;
+  }
 }
+@media screen and (min-width: 1px) and (max-width: 992px) {
+  .LastRelandAbsSec button {
+    margin-bottom: 20px;
+  }
+  .LastRelandAbsSec {
+    flex-wrap: wrap;
+  }
+  .builderformText {
+    margin-left: 0;
+  }
 }
-@media screen and (min-width:1px) and (max-width:992px) {
-    .LastRelandAbsSec button {
-        margin-bottom: 20px;}
-    .LastRelandAbsSec {
-            flex-wrap: wrap;
-        } 
-    .builderformText {
-            margin-left: 0;
-        }  
-    }
 
 /* End Media Query of Section of Rel an Abs */
 /* End of Section of abs and Rel */
 
 /* Start of Use Cases Section */
 .UsecasesSec {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 125px;
 }
 .UsecasesSec h2 {
-    font-weight: bold;
-    font-size: 32px;
-    margin-bottom: 15px;
-    color: black;
-    text-align: center;
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: black;
+  text-align: center;
 }
 .UsecasesSec .firsth3 {
-    font-size: 18px;
-    opacity: 0.9;
-    line-height: 29px;
-    text-align: center;
+  font-size: 18px;
+  opacity: 0.9;
+  line-height: 29px;
+  text-align: center;
 }
 .UseCasesFlexOnFlex h4 {
-    font-size: 16px;
-    opacity: 0.9;
-    line-height: 29px;
-    text-align: center;
+  font-size: 16px;
+  opacity: 0.9;
+  line-height: 29px;
+  text-align: center;
 }
 .UseCasesFlexOnFlex {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 .leftUseCasesFlexOnFlex {
-    background-color: rgb(249, 235, 244);
-    border-radius: 25px;
-    padding: 50px 10px;
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
+  background-color: rgb(249, 235, 244);
+  border-radius: 25px;
+  padding: 50px 10px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
 }
 .rightUseCasesFlexOnFlex {
-    background-color: rgb(235, 245, 252);
-    border-radius: 25px;
-    padding: 50px 10px;
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-
+  background-color: rgb(235, 245, 252);
+  border-radius: 25px;
+  padding: 50px 10px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
 }
 .energandcol {
-    margin-bottom: 35px;
+  margin-bottom: 35px;
 }
 .InnerSecUse {
-    padding: 30px 0px;
-    box-shadow: 1px 1px 10px gray;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    margin: 0%;
-    background-color: white;
+  padding: 30px 0px;
+  box-shadow: 1px 1px 10px gray;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 0%;
+  background-color: white;
 }
 .InnerSecUse i {
-    color: white;
-    background-color: gainsboro;
-    padding: 10px 10px;
-    border-radius: 50%;
+  color: white;
+  background-color: gainsboro;
+  padding: 10px 10px;
+  border-radius: 50%;
 }
 .RootPics12 {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: nowrap;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 .UseCasesFlexOnFlex .row {
-    justify-content: center;
+  justify-content: center;
 }
 .dottedpic2 {
-    margin: 40px 0;
-    
+  margin: 40px 0;
 }
 .FMangEx {
-    font-size: 14px;
-    opacity: 1;
-    margin: 0%;
-    padding: 0;
+  font-size: 14px;
+  opacity: 1;
+  margin: 0%;
+  padding: 0;
 }
 .FMangEx1 {
-    opacity: 0.9;
-    font-size: 12px;
+  opacity: 0.9;
+  font-size: 12px;
 }
 .IcoSpanflex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .Innerdottedsec {
-    margin: 0 4px 35px;
+  margin: 0 4px 35px;
 }
 .h5textabove {
-    font-size: 12px;
-    opacity: 0.9;
+  font-size: 12px;
+  opacity: 0.9;
 }
 .h6textbelow {
-    font-size: 12px;
-    opacity: 0.8;
-    margin-top: 15px;
+  font-size: 12px;
+  opacity: 0.8;
+  margin-top: 15px;
 }
 .UsecasesBtnLast1 {
-    margin-top: 35px;
-    padding: 10px 25px;
-    border: 1px solid #ff7a00;
-    color: #ff7a00;
+  margin-top: 35px;
+  padding: 10px 25px;
+  border: 1px solid #ff7a00;
+  color: #ff7a00;
 }
 .UsecasesBtnLast1:hover {
-    margin-top: 35px;
-    padding: 10px 25px;
-    border: 1px solid #ff7a00;
-    color: #ff7a00;
+  margin-top: 35px;
+  padding: 10px 25px;
+  border: 1px solid #ff7a00;
+  color: #ff7a00;
 }
-.UsecasesBtnLast1 i {margin-right: 10px;}
+.UsecasesBtnLast1 i {
+  margin-right: 10px;
+}
 .UsecasesBtnLast2 {
-    margin-top: 35px;
-    padding: 10px 25px;
-    border: 1px solid #7000E3;
-    color: #7000E3;
+  margin-top: 35px;
+  padding: 10px 25px;
+  border: 1px solid #7000e3;
+  color: #7000e3;
 }
 .UsecasesBtnLast2:hover {
-    margin-top: 35px;
-    padding: 10px 25px;
-    border: 1px solid #7000E3;
-    color: #7000E3;
+  margin-top: 35px;
+  padding: 10px 25px;
+  border: 1px solid #7000e3;
+  color: #7000e3;
 }
-.UsecasesBtnLast2 i {margin-right: 10px;}
+.UsecasesBtnLast2 i {
+  margin-right: 10px;
+}
 
 /* Start of use media query */
-@media screen and (min-width:1px) and (max-width:1168px) {
-    .RootPics12 {
-        flex-wrap: wrap;
-    }
-    .IcoSpanflex {
-        margin-bottom: 20px;
-    }
+@media screen and (min-width: 1px) and (max-width: 1168px) {
+  .RootPics12 {
+    flex-wrap: wrap;
+  }
+  .IcoSpanflex {
+    margin-bottom: 20px;
+  }
 }
-@media screen and (min-width:1px) and (max-width:992px) {
-    .leftUseCasesFlexOnFlex {
-        margin-bottom: 50px;
-    }
+@media screen and (min-width: 1px) and (max-width: 992px) {
+  .leftUseCasesFlexOnFlex {
+    margin-bottom: 50px;
+  }
 }
 /* End of use media query */
 /* End of Use Cases Section */
@@ -1011,172 +971,169 @@ font-size: 14px;
 /* Start of Stepper Section */
 
 .StepperSec {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 125px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 125px;
 }
-
 
 .steppermainwork {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 .Lsteppermainwork {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: row;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
 }
 .HIworks {
-    opacity: 0.6;
-    font-size: 22px;
+  opacity: 0.6;
+  font-size: 22px;
 }
 .Letsbuild {
-    font-weight: bold;
-    font-size: 30px;
-    color: black;
-    margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 30px;
+  color: black;
+  margin-bottom: 15px;
 }
 .Lsteppermainwork h3 {
-    font-size: 18px;
-    color: #7000E3;
-    border: 1px solid #7000E3;
-    padding: 5px 10px;
-    border-radius: 50%;
-    margin-right: 15px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+  font-size: 18px;
+  color: #7000e3;
+  border: 1px solid #7000e3;
+  padding: 5px 10px;
+  border-radius: 50%;
+  margin-right: 15px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 .Lsteppermainwork h2 {
-    font-size: 22px;
-    font-weight: bold;
-    color: black;
+  font-size: 22px;
+  font-weight: bold;
+  color: black;
 }
 .LSecsteppermainwork {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 15px;
-    position: relative;
-    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 15px;
+  position: relative;
 }
 .LSecsteppermainwork h4 {
-    margin-left: 20px;
-    font-size: 18px;
-    line-height: 26px;
-    opacity: 0.7;
+  margin-left: 20px;
+  font-size: 18px;
+  line-height: 26px;
+  opacity: 0.7;
 }
-.LSecsteppermainwork::before{
-    content: "";
-    background-color: #7000E3;
-    width: 1px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
+.LSecsteppermainwork::before {
+  content: "";
+  background-color: #7000e3;
+  width: 1px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
 }
 .Stepperrow {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .Forhovercursor {
-    cursor: pointer;
-    height: fit-content;
-    margin-bottom: 30px;
+  cursor: pointer;
+  height: fit-content;
+  margin-bottom: 30px;
 }
 .StepperSecRight {
-    margin-top: 45px;
+  margin-top: 45px;
 }
 .ReviewYourTeam {
-    display: none;
+  display: none;
 }
 .StartBuilding {
-    display: none;
+  display: none;
 }
 .LastTextofStepper h3 {
-    color: #7000E3;
-    font-size: 20px;
-    font-weight: bold;
-    margin-left: 45px;
+  color: #7000e3;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 45px;
 }
 .LastTextofStepper {
-    text-decoration: none;
+  text-decoration: none;
 }
 .StepperSecRight img {
-    height: 500px;
+  height: 500px;
 }
 #FhoverJs {
-    background-color: #7000E3;
-    color: white;
+  background-color: #7000e3;
+  color: white;
 }
 /* start of stepper section media query */
-@media screen and (min-width:1px) and (max-width:992px) {
-    .LSecsteppermainwork::before{
-        display: none;
-        width: 0;
-    }
-    .beforePasuedo{
-        display: none;
-    }
-    .StepperSec .row {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 0px;
-    }
-    .Lsteppermainwork {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    .StepperMainLeft {
-        text-align: center;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-    .LSecsteppermainwork h4 {
-        margin: 0px;
-        padding: 0;
-        font-size: 14px;
-    }
-    .LSecsteppermainwork {
-        margin: 0;
-    }
-    .LastTextofStepper {
-        margin: auto;
-    }
-    .LastTextofStepper h3 {
-        margin: 0;
-        font-size: 12px;
-    }
-    .Stepperrow {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    .Lsteppermainwork h2 {
-        font-size: 18px;
-    }
-    .StepperSecRight {
-        margin-top: 20px;
-    }
-    .Forhovercursor {
-        margin-bottom: 10px;
-    }
+@media screen and (min-width: 1px) and (max-width: 992px) {
+  .LSecsteppermainwork::before {
+    display: none;
+    width: 0;
+  }
+  .beforePasuedo {
+    display: none;
+  }
+  .StepperSec .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+  }
+  .Lsteppermainwork {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .StepperMainLeft {
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .LSecsteppermainwork h4 {
+    margin: 0px;
+    padding: 0;
+    font-size: 14px;
+  }
+  .LSecsteppermainwork {
+    margin: 0;
+  }
+  .LastTextofStepper {
+    margin: auto;
+  }
+  .LastTextofStepper h3 {
+    margin: 0;
+    font-size: 12px;
+  }
+  .Stepperrow {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .Lsteppermainwork h2 {
+    font-size: 18px;
+  }
+  .StepperSecRight {
+    margin-top: 20px;
+  }
+  .Forhovercursor {
+    margin-bottom: 10px;
+  }
 }
-@media screen and (min-width:1px) and (max-width:720px) {
-   
-    .StepperSecRight img {
-        height: 230px;
-    }
+@media screen and (min-width: 1px) and (max-width: 720px) {
+  .StepperSecRight img {
+    height: 230px;
+  }
 }
 /* End of stepper section media query */
 /* End of Stepper Section */
@@ -1184,538 +1141,517 @@ font-size: 14px;
 /* start of case studies section */
 
 .casestudies {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 30px;
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
 }
 .Mcasestudies h3 {
-    opacity: 0.7;
-    font-size: 18px;
-    color: black;
+  opacity: 0.7;
+  font-size: 18px;
+  color: black;
 }
-.MNowyouCAn h2  {
-    opacity: 1;
-    font-weight: bold;
-    font-size: 28px;
-    color: black;
+.MNowyouCAn h2 {
+  opacity: 1;
+  font-weight: bold;
+  font-size: 28px;
+  color: black;
 }
 .casestudiesVidText {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
 }
 
 .casestudiesVid video {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .casestudiesText {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    text-align: start;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: start;
 }
 .casestudiesTextFTop {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 25px;
 }
 .imgparentusecases {
-    width: fit-content;
-    padding: 0;
+  width: fit-content;
+  padding: 0;
 }
 .casestudiesTextBImg {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 .casestudiesTextBImg h4 {
-    font-size: 16px;
-    font-weight: bold;
+  font-size: 16px;
+  font-weight: bold;
 }
 .casestudiesTextBImg h3 {
-    font-size: 12px;
-    opacity: 0.7;
+  font-size: 12px;
+  opacity: 0.7;
 }
 .howappUecasesParent h2 {
-    font-size: 32px;
-    font-weight: bold;
-    color: black;
+  font-size: 32px;
+  font-weight: bold;
+  color: black;
 }
 .LearhowappUecasesParent h3 {
-    font-size: 18px;
-    opacity: 0.8;
+  font-size: 18px;
+  opacity: 0.8;
 }
 .cassstudiesbtn {
-    margin: 0;
-    padding: 0;
-    color: #7000E3;
-    text-decoration: none;
-    
+  margin: 0;
+  padding: 0;
+  color: #7000e3;
+  text-decoration: none;
 }
 .cassstudiesbtn:hover {
-    color: #7000E3;
-
-    
+  color: #7000e3;
 }
 .cassstudiesbtn h3 {
-    font-size: 18px;
-    font-weight: bold;
+  font-size: 18px;
+  font-weight: bold;
 }
 .UsecasesbtnExStyle {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 /* End of studies case section */
 /* Start of studies case section MEdia Query */
-@media screen and (min-width:1px) and (max-width:997px) {
-    .casestudiesVidText {
-        flex-direction: column;
-        margin-top: 0;
-    } 
-    .casestudiesTextFTop {
-        display: none;
-    }
-    .casestudiesText {
-        text-align: center;
-    }
-    .cassstudiesbtnparent {
-        margin: auto;
-    }
-    .casestudiesVid {
-        margin-bottom: 20px;
-    }
+@media screen and (min-width: 1px) and (max-width: 997px) {
+  .casestudiesVidText {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .casestudiesTextFTop {
+    display: none;
+  }
+  .casestudiesText {
+    text-align: center;
+  }
+  .cassstudiesbtnparent {
+    margin: auto;
+  }
+  .casestudiesVid {
+    margin-bottom: 20px;
+  }
 }
-@media screen and (min-width:1px) and (max-width:475px) {
-    .Mcasestudies h3 {
-        font-size: 12px;
-    }
-    .MNowyouCAn h2  {
-        font-size: 22px;
-    }
-    .cassstudiesbtn h3 {
-        font-size: 14px;
-    }
-    .howappUecasesParent h2 {
-        font-size: 22px;
-    }
+@media screen and (min-width: 1px) and (max-width: 475px) {
+  .Mcasestudies h3 {
+    font-size: 12px;
+  }
+  .MNowyouCAn h2 {
+    font-size: 22px;
+  }
+  .cassstudiesbtn h3 {
+    font-size: 14px;
+  }
+  .howappUecasesParent h2 {
+    font-size: 22px;
+  }
 }
 /* End of studies case section Media Query */
 /* End of case studies section */
 
-
-
 /* start cards pic and text section */
 .cardspicandtext {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding: 0;
-    margin-bottom: 125px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 0;
+  margin-bottom: 125px;
 }
 .cardspicandtext .row {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 .rowfirst {
-    flex-direction: row;
-    flex-wrap: wrap;
-
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .cardspicandtext .img-fluid {
-    height: 300px;
-    margin-bottom: 50px;
+  height: 300px;
+  margin-bottom: 50px;
 }
 .cardT {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 .CardTFlex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 10px;
 }
 .cardT img {
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 .cardT h3 {
-    font-size: 14px;
-    color: black;
+  font-size: 14px;
+  color: black;
 }
 .cardT span {
-    font-size: 12px;
-    color: black;
-    opacity: 0.7;
+  font-size: 12px;
+  color: black;
+  opacity: 0.7;
 }
-.card-text{
-    font-size: 26px;
-    font-weight: bold;
-
+.card-text {
+  font-size: 26px;
+  font-weight: bold;
 }
 .text-muted {
-    font-size: 32px;
-    opacity: 0.8;
+  font-size: 32px;
+  opacity: 0.8;
 }
 .cardspicandtext .rowsec {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /* Start media query */
-@media screen and (min-width:1px) and (max-width:998px) {
-    .cardT h3 {
-        font-size: 12px;
-    }
-    .cardT span {
-        font-size: 10px;
-    }
-    .card-text{
-        font-size: 18px;
-    }
-    .text-muted {
-        font-size: 28px;
-    }
+@media screen and (min-width: 1px) and (max-width: 998px) {
+  .cardT h3 {
+    font-size: 12px;
+  }
+  .cardT span {
+    font-size: 10px;
+  }
+  .card-text {
+    font-size: 18px;
+  }
+  .text-muted {
+    font-size: 28px;
+  }
 }
-@media screen and (min-width:1px) and (max-width:576px) {
-    .rowfirst {
-        width: 100vw;
-        overflow-x: scroll;
-        flex-wrap: nowrap;
-    }
-    .cardspicandtext .rowfirst {
-        justify-content: start;
-    }
-    .cardspicandtext .rowsec {
-        text-align: center;
-    }
-    .card-body {
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-    }
-    .card-body p {
-        margin: 0;
-    }
-    .cardspicandtext .img-fluid {
-        margin-bottom: 20px;
-    }
+@media screen and (min-width: 1px) and (max-width: 576px) {
+  .rowfirst {
+    width: 100vw;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+  }
+  .cardspicandtext .rowfirst {
+    justify-content: start;
+  }
+  .cardspicandtext .rowsec {
+    text-align: center;
+  }
+  .card-body {
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .card-body p {
+    margin: 0;
+  }
+  .cardspicandtext .img-fluid {
+    margin-bottom: 20px;
+  }
 }
 /* End media query */
 /* End cards pic and text section */
 
-
 /* start of popup pages */
 .MainPopUppages {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    background-color: transparent;
-    z-index: 5;
-    display: none;
-    
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background-color: transparent;
+  z-index: 5;
+  display: none;
 }
 .PopUppages {
-    position: fixed;
-    top: 15%;
-    bottom: 5%;
-    width: 90%;
-    left: 5%;
-    background-color: #8caa92;
-    background-image: url(pics/BGpopup.png);
-    background-size: cover;
-    border-radius: 15px; 
-    z-index: 5;
-    display: flex;
-    flex-direction: row;
-    display: none;
-    
-    
+  position: fixed;
+  top: 15%;
+  bottom: 5%;
+  width: 90%;
+  left: 5%;
+  background-color: #8caa92;
+  background-image: url(pics/BGpopup.png);
+  background-size: cover;
+  border-radius: 15px;
+  z-index: 5;
+  display: flex;
+  flex-direction: row;
+  display: none;
 }
 .PopUppages1 {
-    background-color: #8caa92;
-    background-image: url(pics/BGpopup.png);
+  background-color: #8caa92;
+  background-image: url(pics/BGpopup.png);
 }
 .PopUppages2 {
-    background-color: #103b86;
-    background-image: none;
+  background-color: #103b86;
+  background-image: none;
 }
 .PopUppages3 {
-    background-color: #292c33;
-    background-image: none;
+  background-color: #292c33;
+  background-image: none;
 }
 .PopUppages4 {
-    background-color: #840;
-    background-image: none;
+  background-color: #840;
+  background-image: none;
 }
 .PopUpLeftside {
-    overflow-y: scroll;
-    margin-top: 40px;
-    margin-left: 40px;
-    display: flex;
-    flex-direction: column;
-    height: 90%;
+  overflow-y: scroll;
+  margin-top: 40px;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
 }
 .firstleftsidde {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    flex-direction: row;
-    flex-wrap: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 .quotepopup {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 .firstleftsiddeText {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 .firstleftsiddeText h3 {
-    color: white;
-    font-size: 12px;
-    opacity: 0.8;
+  color: white;
+  font-size: 12px;
+  opacity: 0.8;
 }
 .firstleftsiddeText h4 {
-    color: white;
-    font-size: 14px;
+  color: white;
+  font-size: 14px;
 }
 .SecLeftSide h5 {
-    color: white;
-    font-size: 14px;
-    margin-top: 20px;
+  color: white;
+  font-size: 14px;
+  margin-top: 20px;
 }
 .SecLeftSide h2 {
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 .SecLeftSide h4 {
-    color: white;
-    font-size: 16px;
-    margin-bottom: 30px;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 30px;
 }
 .SecLeftSide h3 {
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
 }
-.SecLeftSidepics  {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-right: 40px;
-
+.SecLeftSidepics {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: 40px;
 }
 .SecLeftSidepics img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
 }
 .SecLeftSidepicswithText {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .SecLeftSidepicswithText span {
-    font-size: 12px;
-    color: white;
-    text-align: center;
-    margin-bottom: 10px;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
 }
 .ThirdLeftSide h3 {
-    color: white;
-    font-size: 16px;
-    margin-bottom: 20px;
+  color: white;
+  font-size: 16px;
+  margin-bottom: 20px;
 }
-.ThirdLeftSide  {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: flex-start;
+.ThirdLeftSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
 }
 
 .ThirdLeftSide button {
-    border: 1px solid white;
-    color: white;
-    background-color: transparent;
-    margin-bottom: 10px;
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
+  margin-bottom: 10px;
 }
 .ThirdLeftSide button:hover {
-    border: 1px solid white;
-    color: white;
-    background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  background-color: transparent;
 }
 .PopUprightside {
-    align-self: flex-end;
-    position: relative;
+  align-self: flex-end;
+  position: relative;
 }
-.PopUprightside img{
-    width: 60%;
-    float: right;
+.PopUprightside img {
+  width: 60%;
+  float: right;
 }
 .PopUppages i {
-    position: absolute;
-    top: 3%;
-    right: 3%;
-    color: white;
-    font-size: 28px;
-    padding: 5px 10px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.164);
-    box-shadow: 0.5px 0.5px 10px gray;
-    cursor: pointer;
+  position: absolute;
+  top: 3%;
+  right: 3%;
+  color: white;
+  font-size: 28px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.164);
+  box-shadow: 0.5px 0.5px 10px gray;
+  cursor: pointer;
 }
-
 
 /* End of popup pages */
 
-
 /* Start of MIssion by ateam section */
 .MesATeam {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0 auto 125px;
+  text-align: center;
+}
+.MesATeamFirst {
+  opacity: 0.8;
+}
+.MesATeamFirst h4 {
+  font-size: 18px;
+}
+.MesATeamSec {
+  margin: 5px 0;
+}
+.MesATeamSec h2 {
+  font-size: 34px;
+  color: black;
+  line-height: 45px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+.MesATeamThird {
+  opacity: 0.8;
+  font-size: 12px;
+  margin-bottom: 25px;
+}
+.MesATeamThird h4 {
+  font-size: 18px;
+}
+.carousel-caption h5 {
+  color: white;
+}
+.carousel-caption p {
+  color: white;
+}
+
+.carousel-dark .carousel-control-next-icon,
+.carousel-dark .carousel-control-prev-icon {
+  filter: none;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+}
+.carousel-item img {
+  border-radius: 25px;
+}
+.MesATeamThreeCards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0;
+  margin-bottom: 50px;
+}
+.MesATeamThreeCards a {
+  color: black;
+  text-decoration: none;
+}
+.MesATeamThreeCards img {
+  border-radius: 25px;
+}
+.MCardsBody {
+  text-align: start;
+  padding-left: 0;
+}
+.MCardsBody .card-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+.MCardsBody .card-text {
+  font-weight: 500;
+  font-size: 16px;
+  opacity: 0.9;
+}
+.MCardsBody .card-text span {
+  font-weight: bold;
+  font-size: 18px;
+  opacity: 0.9;
+}
+/* Start of mission by Ateam Media query */
+@media screen and (min-width: 1px) and (max-width: 768px) {
+  .HiddenonMdWidth {
+    display: none;
+  }
+  .MesATeamThreeCards {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0;
-    margin: 0 auto 125px ;
-    text-align: center;
-}
-.MesATeamFirst {
-    opacity: 0.8;
-}
-.MesATeamFirst h4 {
-    font-size: 18px;
-}
-.MesATeamSec {
-    margin: 5px 0;
-    
-}
-.MesATeamSec h2{
-    font-size: 34px;
-    color: black;
-    line-height: 45px;
-    font-weight: 700;
-    letter-spacing: -.3px;
-    
-}
-.MesATeamThird {
-    opacity: 0.8;
-    font-size: 12px;
-    margin-bottom: 25px;
-}
-.MesATeamThird h4 {
-    font-size: 18px;
-    
-}
-.carousel-caption h5 {
-    color: white;
-}
-.carousel-caption p {
-    color: white;
-}
-
-.carousel-dark .carousel-control-next-icon, .carousel-dark .carousel-control-prev-icon {
-    filter: none;
-}
-.carousel-control-next-icon, .carousel-control-prev-icon {
-    display: inline-block;
-    width: 5rem;
-    height: 5rem;
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: 100% 100%;
-}
-.carousel-item img {
-    border-radius: 25px;
-}
-.MesATeamThreeCards {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 0;
-    margin-bottom: 50px;
-}
-.MesATeamThreeCards a  {
-    color: black;
-    text-decoration: none;
-}
-.MesATeamThreeCards img {
-    border-radius: 25px;
-}
-.MCardsBody{
-    text-align: start;
-    padding-left: 0;
-}
-.MCardsBody .card-title{
-   font-weight: bold;
-   font-size: 20px;
-}
-.MCardsBody .card-text{
-   font-weight: 500;
-   font-size: 16px;
-   opacity: 0.9;
-}
-.MCardsBody .card-text span{
-   font-weight: bold;
-   font-size: 18px;
-   opacity: 0.9;
-}
-/* Start of mission by Ateam Media query */
-@media screen and (min-width:1px) and (max-width:768px) {
-    .HiddenonMdWidth {
-        display: none;
-    }
-    .MesATeamThreeCards {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 0;
-        margin-bottom: 10px;
-    }
-    .MesATeamThreeCards div {
-        
-        margin-bottom: 15px;
-    }
-    .MesATeamThreeCards div img {
-        
-        margin-bottom: 10px;
-    }
-    .MesATeamThreeCards div p {
-        
-        margin-bottom: 5px;
-    }
+    margin-bottom: 10px;
+  }
+  .MesATeamThreeCards div {
+    margin-bottom: 15px;
+  }
+  .MesATeamThreeCards div img {
+    margin-bottom: 10px;
+  }
+  .MesATeamThreeCards div p {
+    margin-bottom: 5px;
+  }
 }
 
 /* End of mission by Ateam Media query */
