@@ -44,6 +44,7 @@ body {
   position: relative;
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
   background-color: white;
   display: flex;
   justify-content: center;
@@ -116,10 +117,10 @@ body {
 .SkipBut {
   font-size: 3em;
   position: fixed;
-  bottom: 5%;
+  bottom: 10%;
   right: 0%;
   text-align: center;
-  width: 5em;
+  width: 4em;
   cursor: pointer;
   background-color: rgb(128, 128, 128);
   color: white;
