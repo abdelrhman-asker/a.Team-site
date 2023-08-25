@@ -113,6 +113,18 @@ body {
     rotate: 360deg;
   }
 }
+.SkipBut {
+  font-size: 3em;
+  position: fixed;
+  bottom: 5%;
+  right: 0%;
+  text-align: center;
+  width: 5em;
+  cursor: pointer;
+  background-color: rgb(128, 128, 128);
+  color: white;
+  font-weight: bold;
+}
 /* Root End */
 /*Start of Main start Background gradient */
 main {

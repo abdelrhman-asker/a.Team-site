@@ -15,13 +15,19 @@ function BkColorWhite() {
   }
 }
 function Loading() {
-  setTimeout(func, 2000);
+  setTimeout(func, 5000);
 }
 function func() {
   document.getElementById("Loading").remove();
   document.querySelector(".body").classList.remove("body");
   document.querySelector("#allEle").style.display = "block";
 }
+function RemoveLoader() {
+  document.getElementById("Loading").remove();
+  document.querySelector(".body").classList.remove("body");
+  document.querySelector("#allEle").style.display = "block";
+}
+
 window.onload = codeAddress;
 var Popular = document.getElementById("pills-Popular");
 var fintech = document.getElementById("pills-FinTech");
