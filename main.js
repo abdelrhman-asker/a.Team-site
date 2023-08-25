@@ -14,7 +14,15 @@ function BkColorWhite() {
     document.getElementById("FNavBar").style.backgroundColor = "white";
   }
 }
-
+function Loading() {
+  setTimeout(func, 2000);
+}
+function func() {
+  document.getElementById("Loading").remove();
+  document.querySelector(".body").classList.remove("body");
+  document.querySelector("#allEle").style.display = "block";
+}
+window.onload = codeAddress;
 var Popular = document.getElementById("pills-Popular");
 var fintech = document.getElementById("pills-FinTech");
 var HealthTech = document.getElementById("pills-HealthTech");

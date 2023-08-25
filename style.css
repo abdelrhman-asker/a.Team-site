@@ -4,10 +4,114 @@
   margin: 0;
   font-family: Inter, sans-serif;
 }
+body::-webkit-scrollbar {
+  width: 20px;
+  color: black;
+  background-image: linear-gradient(
+    to right,
+    hsl(329.03, 100%, 93.92%) 0%,
+    hsl(329.05, 100%, 94%) 8.1%,
+    hsl(329.09, 100%, 94.24%) 15.5%,
+    hsl(329.15, 100%, 94.59%) 22.5%,
+    hsl(329.22, 100%, 95.05%) 29%,
+    hsl(329.31, 100%, 95.58%) 35.3%,
+    hsl(329.4, 100%, 96.15%) 41.2%,
+    hsl(329.5, 100%, 96.76%) 47.1%,
+    hsl(329.6, 100%, 97.36%) 52.9%,
+    hsl(329.69, 100%, 97.95%) 58.8%,
+    hsl(329.77, 100%, 98.5%) 64.7%,
+    hsl(329.85, 100%, 98.99%) 71%,
+    hsl(329.91, 100%, 99.4%) 77.5%,
+    hsl(329.96, 100%, 99.72%) 84.5%,
+    hsl(329.99, 100%, 99.93%) 91.9%,
+    hsl(0, 0%, 100%) 100%
+  );
+}
 
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(115, 78, 196, 0.6);
+  border-radius: 30%;
+}
 body {
   width: 100vw;
   overflow-x: hidden;
+}
+.body {
+  height: 100vh;
+  overflow: hidden;
+}
+.AllLoad {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  z-index: 99999;
+  align-items: center;
+}
+#allEle {
+  display: none;
+}
+.Loading {
+  position: absolute;
+  font-weight: bold;
+  font-size: 2em;
+  z-index: 99999;
+}
+.AllLoad .ring {
+  position: absolute;
+  border-radius: 50%;
+  animation: Rotating 3s linear infinite;
+  margin: 1em;
+}
+.AllLoad .ring::after {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 10px;
+
+  border-radius: 50%;
+  background-color: #103b86;
+  box-shadow: 0px 0px 0px 5px rgba(0, 0, 255, 0.23);
+}
+.AllLoad .ring:nth-child(3) {
+  border-top: 8px solid #ff7a00;
+  width: 18em;
+  height: 18em;
+}
+.AllLoad .ring:nth-child(3)::after {
+  left: 98%;
+  top: 40%;
+}
+.AllLoad .ring:nth-child(2) {
+  border-left: 8px solid hsl(329, 100%, 81%);
+  width: 14em;
+  height: 14em;
+}
+.AllLoad .ring:nth-child(2)::after {
+  left: 40%;
+  top: -2%;
+}
+.AllLoad .ring:nth-child(4) {
+  border-right: 8px solid rgb(115, 78, 196, 0.6);
+  width: 22em;
+  height: 22em;
+}
+.AllLoad .ring:nth-child(4)::after {
+  left: 54%;
+  top: 98%;
+}
+@keyframes Rotating {
+  0% {
+    rotate: 0deg;
+  }
+  50% {
+    rotate: 180deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
 }
 /* Root End */
 /*Start of Main start Background gradient */
