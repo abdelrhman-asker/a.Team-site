@@ -8,7 +8,11 @@ window.onscroll = () => {
 };
 
 function BkColorWhite() {
-  document.getElementById("FNavBar").style.backgroundColor = "white";
+  if (document.getElementById("collapsedTog").classList[1] === "collapsed") {
+    document.getElementById("FNavBar").style.backgroundColor = "transparent";
+  } else {
+    document.getElementById("FNavBar").style.backgroundColor = "white";
+  }
 }
 
 var Popular = document.getElementById("pills-Popular");
