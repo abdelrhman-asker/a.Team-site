@@ -61,7 +61,7 @@ main {
   margin-right: 20px;
 }
 .nav-active {
-  background-color: #fff;
+  background-color: #fff !important;
   box-shadow: 5px -1px 12px -5px grey;
 }
 .dropdown-menu {
