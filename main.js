@@ -28,22 +28,21 @@ function RemoveLoader() {
   document.querySelector("#allEle").style.display = "block";
 }
 
-window.onload = codeAddress;
-var Popular = document.getElementById("pills-Popular");
-var fintech = document.getElementById("pills-FinTech");
-var HealthTech = document.getElementById("pills-HealthTech");
-var Ecommerce = document.getElementById("pills-Ecommerce");
-var Marketplaces = document.getElementById("pills-Marketplaces");
-var Web3 = document.getElementById("pills-Web3");
-var FutureWork = document.getElementById("pills-Future-of-Work");
-var media = document.getElementById("pills-media");
+const Popular = document.getElementById("pills-Popular");
+const fintech = document.getElementById("pills-FinTech");
+const HealthTech = document.getElementById("pills-HealthTech");
+const Ecommerce = document.getElementById("pills-Ecommerce");
+const Marketplaces = document.getElementById("pills-Marketplaces");
+const Web3 = document.getElementById("pills-Web3");
+const FutureWork = document.getElementById("pills-Future-of-Work");
+const media = document.getElementById("pills-media");
 
 window.onload = function () {
   document.querySelector("#pills-Popular-tab").click();
 };
 function opencreate1() {
-  fintech.style.display = "none";
   Popular.style.display = "flex";
+  fintech.style.display = "none";
   HealthTech.style.display = "none";
   Ecommerce.style.display = "none";
   Marketplaces.style.display = "none";
@@ -52,8 +51,8 @@ function opencreate1() {
   media.style.display = "none";
 }
 function opencreate2() {
-  fintech.style.display = "flex";
   Popular.style.display = "none";
+  fintech.style.display = "flex";
   HealthTech.style.display = "none";
   Ecommerce.style.display = "none";
   Marketplaces.style.display = "none";

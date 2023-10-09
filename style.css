@@ -612,6 +612,12 @@ main {
   align-items: center;
   flex-direction: row;
 }
+.tab-content .nonact {
+  display: none;
+}
+.sec-div22 {
+  display: none;
+}
 .card {
   border: none;
   margin: 0 12px;
