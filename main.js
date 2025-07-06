@@ -15,7 +15,7 @@ function BkColorWhite() {
   }
 }
 function Loading() {
-  setTimeout(func, 5000);
+  setTimeout(func, 0);
 }
 function func() {
   document.getElementById("Loading").remove();
