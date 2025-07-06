@@ -27,6 +27,10 @@ function RemoveLoader() {
   document.querySelector(".body").classList.remove("body");
   document.querySelector("#allEle").style.display = "block";
 }
+window.onload = function () {
+  document.querySelector("#pills-Popular-tab").click();
+  Loading(); 
+};
 const Popular = document.getElementById("pills-Popular");
 const fintech = document.getElementById("pills-FinTech");
 const HealthTech = document.getElementById("pills-HealthTech");
