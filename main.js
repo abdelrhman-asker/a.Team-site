@@ -27,7 +27,7 @@ function RemoveLoader() {
   document.querySelector(".body").classList.remove("body");
   document.querySelector("#allEle").style.display = "block";
 }
-
+RemoveLoader()
 const Popular = document.getElementById("pills-Popular");
 const fintech = document.getElementById("pills-FinTech");
 const HealthTech = document.getElementById("pills-HealthTech");
