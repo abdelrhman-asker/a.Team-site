@@ -14,20 +14,19 @@ function BkColorWhite() {
     document.getElementById("FNavBar").style.backgroundColor = "white";
   }
 }
-function Loading() {
-  setTimeout(func, 5000);
-}
-function func() {
-  document.getElementById("Loading").remove();
-  document.querySelector(".body").classList.remove("body");
-  document.querySelector("#allEle").style.display = "block";
-}
-function RemoveLoader() {
-  document.getElementById("Loading").remove();
-  document.querySelector(".body").classList.remove("body");
-  document.querySelector("#allEle").style.display = "block";
-}
-RemoveLoader()
+// function Loading() {
+//   setTimeout(func, 5000);
+// }
+// function func() {
+//   document.getElementById("Loading").remove();
+//   document.querySelector(".body").classList.remove("body");
+//   document.querySelector("#allEle").style.display = "block";
+// }
+// function RemoveLoader() {
+//   document.getElementById("Loading").remove();
+//   document.querySelector(".body").classList.remove("body");
+//   document.querySelector("#allEle").style.display = "block";
+// }
 const Popular = document.getElementById("pills-Popular");
 const fintech = document.getElementById("pills-FinTech");
 const HealthTech = document.getElementById("pills-HealthTech");
