@@ -15,16 +15,7 @@ function BkColorWhite() {
   }
 }
 function Loading() {
-  setTimeout(() => {
-    const loader = document.getElementById("Loading");
-    if (loader) loader.remove();
-
-    const bodyElement = document.querySelector(".body");
-    if (bodyElement) bodyElement.classList.remove("body");
-
-    const allEle = document.querySelector("#allEle");
-    if (allEle) allEle.style.display = "block";
-  }, 1000); // 1 second
+  setTimeout(func, 100);
 }
 function func() {
   document.getElementById("Loading").remove();
@@ -36,7 +27,7 @@ function RemoveLoader() {
   document.querySelector(".body").classList.remove("body");
   document.querySelector("#allEle").style.display = "block";
 }
-
+Loading()
 const Popular = document.getElementById("pills-Popular");
 const fintech = document.getElementById("pills-FinTech");
 const HealthTech = document.getElementById("pills-HealthTech");
@@ -48,8 +39,6 @@ const media = document.getElementById("pills-media");
 
 window.onload = function () {
   document.querySelector("#pills-Popular-tab").click();
-    Loading(); 
-
 };
 function opencreate1() {
   Popular.style.display = "flex";
